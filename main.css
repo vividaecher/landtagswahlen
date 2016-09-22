@@ -1,0 +1,48 @@
+
+body {
+
+  margin: auto;
+}
+nav {
+  background: #58C9B9;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding-left: 50px;
+}
+
+nav ul li a {
+  float: left;
+  padding: 15px 50px;
+}
+
+nav a {
+  color: #fff;
+  transition: background-color .4s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #519D9E;
+}
+
+h1 {
+  color: #fff;
+}
+
+header {
+  background: #D1B6E1;
+  position: fixed;
+  top: 53px;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+  padding: 50px;
+}
+
+section {
+  position: absolute;
+  height: 100%;
+  top: 230px;;
+  left: 50px;
+  right: 50px;
+}
