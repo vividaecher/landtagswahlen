@@ -10,10 +10,82 @@
 <body>
 
 <?php
+session_start();
+
+
+$linke = 0;
+$spd = 0;
+$gruenen = 0;
+$fdp = 0;
+$cdu = 0;
+$afd = 0;
+
+// Verbindung zur Datenbank herstellen
+$db = mysqli_connect("localhost", "root", "", "wahlen");
+
+
+// PHP-Variablen werden deklariert und mit bedingter Verzweigung überprüft - danach: Wertezuweisung
+if (isset($_POST["hash"])) {
+  $hash = $_POST["hash"];
+
+  if (isset($_POST["partei"])) {
+      $partei = $_POST["partei"];
+
+      switch ($partei) {
+        case 'linke':
+          $linke = 1;
+          break;
+
+        case 'spd':
+          $spd = 1;
+          break;
+
+        case 'gruenen':
+          $gruenen = 1;
+          break;
+
+        case 'fdp':
+          $fdp = 1;
+          break;
+
+        case 'cdu':
+          $cdu = 1;
+          break;
+
+        case 'afd':
+          $afd = 1;
+          break;
+
+        default:
+          echo 'Keine Partei ausgewählt.';
+          break;
+        }
+  }
+
+  //Dateneintrag in die Tabelle 'nrw_2017'
+  $query = "INSERT INTO nrw_2017 (Linke,SPD,Gruenen,FDP,CDU,AfD,hash) VALUES ($linke,$spd,$gruenen,$fdp,$cdu,$afd,'$hash')";
+  $_SESSION["voted"] = mysqli_query($db, $query);
+  if(!$_SESSION["voted"]) {
+    echo '<script type="text/javascript">alert("Stimme bereits abgegeben");</script>';
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 // Verbindungsaufbau mit einer MySQLI-Datenbank
 // z.B.: $db = mysqli_connect("localhost", "USER", "password", "datenbank");
 
-$db = mysqli_connect('localhost', 'root', '', 'wahlen');
+
 
 // Fehlerausgabe falls die Variable $db nicht existiert
 if (!$db) {
@@ -238,64 +310,7 @@ mysqli_close($db);
 
 <?php
 // Im nächsten PHP-Codeschnipsel werden die Variablen $linke, $spd, $gruenen, $fdp, $cdu und $afd auf 0 gesetzt
-$linke = 0;
-$spd = 0;
-$gruenen = 0;
-$fdp = 0;
-$cdu = 0;
-$afd = 0;
 
-// Verbindung zur Datenbank herstellen
-$db = mysqli_connect("localhost", "root", "", "wahlen");
-
-
-// PHP-Variablen werden deklariert und mit bedingter Verzweigung überprüft - danach: Wertezuweisung
-if (isset($_POST["hash"])) {
-  $hash = $_POST["hash"];
-
-  if (isset($_POST["partei"])) {
-      $partei = $_POST["partei"];
-
-      switch ($partei) {
-        case 'linke':
-          $linke = 1;
-          break;
-
-        case 'spd':
-          $spd = 1;
-          break;
-
-        case 'gruenen':
-          $gruenen = 1;
-          break;
-
-        case 'fdp':
-          $fdp = 1;
-          break;
-
-        case 'cdu':
-          $cdu = 1;
-          break;
-
-        case 'afd':
-          $afd = 1;
-          break;
-
-        default:
-          echo 'Keine Partei ausgewählt.';
-          break;
-        }
-  }
-
-  //Dateneintrag in die Tabelle 'nrw_2017'
-  $query = "INSERT INTO nrw_2017 (Linke,SPD,Gruenen,FDP,CDU,AfD,hash) VALUES ($linke,$spd,$gruenen,$fdp,$cdu,$afd,'$hash')";
-  $response = mysqli_query($db, $query);
-  if(!$response) {
-    echo '<script type="text/javascript">alert("Stimme bereits abgegeben");</script>';
-  }
-
-
-}
 
 ?>
 </body>
