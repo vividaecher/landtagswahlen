@@ -47,7 +47,7 @@ das über RADIO-Buttons Werte durch Anklicken in den Speicher nimmt -->
 	</fieldset>
 
     <button type="submit" value="eintragen">Jetzt wählen</button>
-    <input type="hidden" name="status" value="gesendet">
+    <input type="hidden" name="hash" value="<?php echo md5(uniqid(rand(), TRUE));?>">
 </form>
 
 
