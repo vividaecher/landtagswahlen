@@ -39,7 +39,7 @@ if (!$db) {
     exit ('Verbindungsfehler: ' . mysqli_connect_error());
 }
 
-$parties_with_votes = mysqli_query($db, "SELECT party, votes, all_votes.sum FROM nrw_2017 JOIN (SELECT SUM(votes) AS sum FROM nrw_2017) AS all_votes");
+$parties_with_votes = mysqli_query($db, "SELECT votes, label, all_votes.sum FROM nrw_2017 JOIN (SELECT SUM(votes) AS sum FROM nrw_2017) AS all_votes");
 /*
 $parties_with_votes {
   ["linke", 25, 70], -> $party_with_votes
@@ -49,11 +49,11 @@ $parties_with_votes {
 
 $sum = 0;
 while ($party_with_votes = mysqli_fetch_row($parties_with_votes)) {
-  $party = $party_with_votes[0];
-  $votes = $party_with_votes[1];
+  $votes = $party_with_votes[0];
+  $label = $party_with_votes[1];
   $sum = $party_with_votes[2];
 
-  echo "<hr>Stimmen für die $party:<br>$votes";
+  echo "<hr>Stimmen für die $label:<br>$votes";
   echo '<div style="background:#FF0; width:' . ($votes) . '%">(' . round($votes / $sum * 100, 1) . '%)</div>';
 }
 

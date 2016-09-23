@@ -1,8 +1,17 @@
 DROP TABLE IF EXISTS `nrw_2017`;
 CREATE TABLE `nrw_2017` (
-  `id` int(8) NOT NULL AUTO_INCREMENT,
+  `id` int(3) NOT NULL AUTO_INCREMENT,
   `party` varchar(10) NOT NULL,
-  `votes` int(1) NOT NULL,
+  `label` varchar(20) NOT NULL,
+  `votes` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
-INSERT INTO `nrw_2017` (`party`, `votes`) VALUES ('linke',0),('spd',0), ('gruenen',0), ('fdp',0), ('cdu',0), ('afd',0);
+INSERT INTO `nrw_2017`
+(`party`, `label`, `votes`) 
+VALUES
+('linke','Die Linke',0),
+('spd','SPD',0),
+('gruenen','Die Grünen',0),
+('fdp','FDP',0),
+('cdu','CDU',0),
+('afd','AfD',0);
