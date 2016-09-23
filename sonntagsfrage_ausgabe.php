@@ -61,5 +61,21 @@ echo 'Gesamtzahl aller abgegebenen Stimmen: ' . $sum;
 
 mysqli_close($db);
 ?>
+
+<button id="destroy_session">Refresh</button>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function() {
+     jQuery("#destroy_session").on("click", destroy);
+  });
+  function destroy() {
+     jQuery.ajax({
+        url: 'destroy_session.php',
+        success: function() {
+            console.log('Session abgebrochen');
+        }
+     });
+  }
+</script>
 </body>
 </html>
