@@ -31,7 +31,6 @@ h1 {
 
 header {
   background: #D1B6E1;
-  position: fixed;
   top: 53px;
   width: 100%;
   z-index: 1;
@@ -42,7 +41,7 @@ header {
 section {
   position: absolute;
   height: 100%;
-  top: 230px;;
+  top: 130px;;
   left: 50px;
   right: 50px;
 }

@@ -1,2 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
+
+.diagramm {
+  color: #fff;
+
+}
+
+.diagramm-linke {
+  background: #DC0000;
+  transition: background 0.2s ease,
+             padding 0.8s linear;
+}
+.diagramm-spd {background: #FE0000;}
+.diagramm-gruenen {background: #1FA12D;}
+.diagramm-fdp {background: #FBEB2C;}
+.diagramm-cdu {background: #000;}
+.diagramm-afd {background: #009EE0;}
