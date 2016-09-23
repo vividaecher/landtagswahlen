@@ -3,13 +3,12 @@
 
 .diagramm {
   color: #fff;
+  padding: 15px;
 
 }
 
 .diagramm-linke {
   background: #DC0000;
-  transition: background 0.2s ease,
-             padding 0.8s linear;
 }
 .diagramm-spd {background: #FE0000;}
 .diagramm-gruenen {background: #1FA12D;}

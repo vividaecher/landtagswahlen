@@ -26,7 +26,7 @@ nav a:hover {
 }
 
 h1 {
-  color: #fff;
+  color: #519D9E;
 }
 
 header {
@@ -41,7 +41,15 @@ header {
 section {
   position: absolute;
   height: 100%;
-  top: 130px;;
+  top: 230px;;
   left: 50px;
   right: 50px;
+}
+
+button {
+  background: #D1B6E1;
+  padding: 2px 24px 5px;
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 10px;
 }
