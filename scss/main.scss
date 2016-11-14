@@ -2,14 +2,44 @@ $primary-color: #4db0e1;
 $secondary-color: #1e3145;
 $highlight-color: #e5007d;
 
-$text-color: #404040;
+$text-color: #565656;
 
-h2 {
-	font-weight: 300;
+@font-face {
+    font-family: 'ralewayblack';
+    src: url('../fonts/raleway-black-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-	span {
-		font-weight: 600;
-	}
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../fonts/raleway-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	font-family: 'ralewayregular', Arial, sans-serif;
+	font-size: 2.1rem;
+	line-height: 2.8rem;
+}
+
+h1, h2, h3 {
+	font-family: 'ralewaysemibold', Arial, sans-serif;
+	text-transform: uppercase;
 }
 
 img {
@@ -52,7 +82,7 @@ nav {
 			display: block;
 
 			.icon {
-				color: white; 
+				color: white;
 			}
 		}
 	}
@@ -79,4 +109,5 @@ header {
 
 .btn {
 	color: white;
-	background: $highlight-color;}
+	background: $highlight-color;
+}
