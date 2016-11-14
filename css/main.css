@@ -1,0 +1,48 @@
+h2 {
+  font-weight: 300; }
+  h2 span {
+    font-weight: 600; }
+
+img {
+  max-width: 100%; }
+
+nav {
+  background-color: #1e3145; }
+  nav .navbar-toggle {
+    position: absolute;
+    right: 2rem;
+    display: block;
+    height: 5rem;
+    width: 5rem;
+    padding: 1.25rem 0 2rem;
+    background-color: transparent;
+    border: none; }
+    nav .navbar-toggle span {
+      display: block;
+      height: .2rem;
+      background-color: white;
+      margin-bottom: .5rem; }
+    nav .navbar-toggle span:nth-child(1) {
+      width: 3rem; }
+    nav .navbar-toggle span:nth-child(2) {
+      width: 2.5rem; }
+    nav .navbar-toggle span:nth-child(3) {
+      width: 2rem; }
+  nav ul {
+    display: none; }
+
+header {
+  background-color: #1e3145;
+  padding: 4rem 0 2rem;
+  margin-bottom: 3rem; }
+  header ._headline, header ._subheadline {
+    color: white;
+    font-size: 1.8rem; }
+  header ._subheadline {
+    font-weight: 300; }
+
+.btn {
+  color: white;
+  background: #e5007d; }
+
+/*# sourceMappingURL=main.css.map */

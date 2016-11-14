@@ -1,0 +1,82 @@
+$primary-color: #4db0e1;
+$secondary-color: #1e3145;
+$highlight-color: #e5007d;
+
+$text-color: #404040;
+
+h2 {
+	font-weight: 300;
+
+	span {
+		font-weight: 600;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+nav {
+	background-color: $secondary-color;
+
+	.navbar-toggle {
+		position: absolute;
+		right: 2rem;
+		display: block;
+		height: 5rem;
+		width: 5rem;
+		padding: 1.25rem 0 2rem;
+		background-color: transparent;
+		border: none;
+
+		@media (min-width: 992px) {
+			display: none;
+		}
+
+		span {
+			display: block;
+			height: .2rem;
+			background-color: white;
+			margin-bottom: .5rem;
+		}
+
+		span:nth-child(1) {width: 3rem;}
+		span:nth-child(2) {width: 2.5rem;}
+		span:nth-child(3) {width: 2rem;}
+	}
+
+	.hamburger-nav {
+		display: none;
+
+		@media (min-width: 992px) {
+			display: block;
+
+			.icon {
+				color: white; 
+			}
+		}
+	}
+}
+
+header {
+	background-color: $secondary-color;
+	padding: 4rem 0 2rem;
+	margin-bottom: 3rem;
+
+	._headline, ._subheadline {
+		color: white;
+		font-size: 1.8rem;
+	}
+
+	._subheadline {
+		font-weight: 300;
+	}
+}
+
+.-landtagswahlen {
+
+}
+
+.btn {
+	color: white;
+	background: $highlight-color;}
