@@ -1,8 +1,17 @@
 $primary-color: #4db0e1;
 $secondary-color: #1e3145;
 $highlight-color: #e5007d;
-
 $text-color: #565656;
+
+$color-gradient: linear-gradient(135deg, rgba(77,176, 225, .5) 0%, transparent 100%);
+$white-gradient: linear-gradient(to bottom, white 75%,transparent 100%);
+
+$fliestext: 1.8rem;
+$headline: 2.5rem;
+
+$screen-tablet: 768px;
+$screen-laptop: 992px;
+$screen-desktop: 1280px;
 
 @font-face {
     font-family: 'ralewayblack';
@@ -33,18 +42,35 @@ $text-color: #565656;
 
 body {
 	font-family: 'ralewayregular', Arial, sans-serif;
-	font-size: 2.1rem;
-	line-height: 2.8rem;
+	font-size: $fliestext;
+	line-height: 2.2rem;
 }
 
 h1, h2, h3 {
 	font-family: 'ralewaysemibold', Arial, sans-serif;
-	text-transform: uppercase;
+  font-size: $headline;
+}
+
+h2, h3 {
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-bottom: 5rem;
+  text-align: center;
 }
 
 img {
 	max-width: 100%;
 }
+
+nav.container-full {
+  display: none;
+}
+
+/*.container, .container-full {
+  position: relative;
+}*/
 
 nav {
 	background-color: $secondary-color;
@@ -59,7 +85,7 @@ nav {
 		background-color: transparent;
 		border: none;
 
-		@media (min-width: 992px) {
+		@media (min-width: $screen-laptop) {
 			display: none;
 		}
 
@@ -78,7 +104,7 @@ nav {
 	.hamburger-nav {
 		display: none;
 
-		@media (min-width: 992px) {
+		@media (min-width: $screen-laptop) {
 			display: block;
 
 			.icon {
@@ -90,12 +116,48 @@ nav {
 
 header {
 	background-color: $secondary-color;
-	padding: 4rem 0 2rem;
+	padding: 4rem 0;
 	margin-bottom: 3rem;
+
+  @media (min-width: $screen-laptop) {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    background: $white-gradient;
+  }
+
+  .container {
+    display: flex;
+
+    @media (min-width: $screen-laptop) {
+      justify-content: space-around;
+    }
+  }
+
+  @media (min-width: $screen-laptop) {
+    ._subheadline, ._logo, ._headline {
+
+    }
+    ._subheadline {
+      order: 1;
+    }
+    ._logo {
+      order: 2;
+    }
+    ._headline {
+      order: 3;
+    }
+  }
 
 	._headline, ._subheadline {
 		color: white;
-		font-size: 1.8rem;
+		font-size: 2.5rem;
+    width: 100%;
+
+    @media (min-width: $screen-laptop) {
+      color: $text-color;
+    }
 	}
 
 	._subheadline {
@@ -104,10 +166,16 @@ header {
 }
 
 .-landtagswahlen {
-
+  padding-top: 20rem;
 }
 
 .btn {
 	color: white;
-	background: $highlight-color;
+  text-transform: uppercase;
+  border-radius: 0;
+  border: none;
+  padding: 1rem;
+  font-size: 1.75rem;
+  margin: 4rem auto;
+	background: $color-gradient, $highlight-color;
 }

@@ -1,4 +1,6 @@
 
-$( ".navbar-toggle" ).click(function() {
-  $(".hamburger-nav").toggle( "slow" );
+$( ".navbar-toggle" ).on ( "click", function(i) {
+  i.preventDefault();
+  $( this ).toggleClass( "-clicked");
+  $( ".hamburger-nav" ).toggleClass( "-open" );
 });
