@@ -1,3 +1,9 @@
+body {
+  color: #565656;
+  font-size: 2.1rem;
+  line-height: 2.8rem;
+  font-family: 'ralewayregular', Arial, sans-serif; }
+
 @font-face {
   font-family: 'ralewayblack';
   src: url("../fonts/raleway-black-webfont.woff2") format("woff2"), url("../fonts/raleway-black-webfont.woff") format("woff");
@@ -13,11 +19,6 @@
   src: url("../fonts/raleway-semibold-webfont.woff2") format("woff2"), url("../fonts/raleway-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-body {
-  font-family: 'ralewayregular', Arial, sans-serif;
-  font-size: 1.8rem;
-  line-height: 2.2rem; }
-
 h1, h2, h3 {
   font-family: 'ralewaysemibold', Arial, sans-serif;
   font-size: 2.5rem; }
@@ -35,9 +36,6 @@ img {
 nav.container-full {
   display: none; }
 
-/*.container, .container-full {
-  position: relative;
-}*/
 nav {
   background-color: #1e3145; }
   nav .navbar-toggle {
@@ -84,9 +82,19 @@ header {
       background: linear-gradient(to bottom, white 75%, transparent 100%); } }
   header .container {
     display: flex; }
+    header .container svg {
+      width: 100%; }
+      header .container svg .st0, header .container svg .st1, header .container svg .st2 {
+        fill: white; }
     @media (min-width: 992px) {
       header .container {
-        justify-content: space-around; } }
+        justify-content: space-around; }
+        header .container svg .st0 {
+          fill: #565656; }
+        header .container svg .st1 {
+          fill: #e5007d; }
+        header .container svg .st2 {
+          fill: #4db0e1; } }
   @media (min-width: 992px) {
     header ._subheadline {
       order: 1; }
