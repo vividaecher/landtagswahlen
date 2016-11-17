@@ -19,11 +19,23 @@ body {
   src: url("../fonts/raleway-semibold-webfont.woff2") format("woff2"), url("../fonts/raleway-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-h1, h2, h3 {
-  font-family: 'ralewaysemibold', Arial, sans-serif;
-  font-size: 2.5rem; }
+a {
+  color: #e5007d; }
+  a:hover, a:focus {
+    color: #4db0e1;
+    text-decoration: none; }
+
+h1 {
+  color: white;
+  font-family: 'ralewayblack', Arial, sans-serif;
+  font-size: 3.6rem; }
+  @media (min-width: 992px) {
+    h1 {
+      color: #565656; } }
 
 h2, h3 {
+  font-size: 3.6rem;
+  font-family: 'ralewaysemibold', Arial, sans-serif;
   text-transform: uppercase; }
 
 h2 {
@@ -32,9 +44,6 @@ h2 {
 
 img {
   max-width: 100%; }
-
-nav.container-full {
-  display: none; }
 
 nav {
   background-color: #1e3145; }
@@ -69,6 +78,9 @@ nav {
         nav .hamburger-nav .icon {
           color: white; } }
 
+.container-full {
+  width: 100%; }
+
 header {
   background-color: #1e3145;
   padding: 4rem 0;
@@ -80,37 +92,17 @@ header {
       width: 100%;
       top: 0;
       background: linear-gradient(to bottom, white 75%, transparent 100%); } }
-  header .container {
-    display: flex; }
-    header .container svg {
-      width: 100%; }
-      header .container svg .st0, header .container svg .st1, header .container svg .st2 {
-        fill: white; }
-    @media (min-width: 992px) {
-      header .container {
-        justify-content: space-around; }
-        header .container svg .st0 {
-          fill: #565656; }
-        header .container svg .st1 {
-          fill: #e5007d; }
-        header .container svg .st2 {
-          fill: #4db0e1; } }
-  @media (min-width: 992px) {
-    header ._subheadline {
-      order: 1; }
-    header ._logo {
-      order: 2; }
-    header ._headline {
-      order: 3; } }
-  header ._headline, header ._subheadline {
-    color: white;
-    font-size: 2.5rem;
+  header .container svg {
     width: 100%; }
-    @media (min-width: 992px) {
-      header ._headline, header ._subheadline {
-        color: #565656; } }
-  header ._subheadline {
-    font-weight: 300; }
+    header .container svg .st0, header .container svg .st1, header .container svg .st2 {
+      fill: white; }
+  @media (min-width: 992px) {
+    header .container svg .st0 {
+      fill: #565656; }
+    header .container svg .st1 {
+      fill: #e5007d; }
+    header .container svg .st2 {
+      fill: #4db0e1; } }
 
 .-landtagswahlen {
   padding-top: 20rem; }
@@ -123,6 +115,10 @@ header {
   padding: 1rem;
   font-size: 1.75rem;
   margin: 4rem auto;
-  background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d; }
+  background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d;
+  font-family: 'ralewaysemibold', Arial, sans-serif; }
+  .btn:hover {
+    background: #e2007c;
+    color: white; }
 
 /*# sourceMappingURL=main.css.map */
