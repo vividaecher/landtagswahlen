@@ -1,4 +1,4 @@
 
-$( ".navbar-toggle" ).on ( "click", function() {
-  $( this ).toggleClass( ".hamburger-nav");
+$(".navbar-toggle").on("click", function() {
+  $(".hamburger-nav").toggleClass("visible");
 });

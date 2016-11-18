@@ -1,9 +1,8 @@
 body {
   color: #565656;
   font-size: 2.1rem;
-  line-height: 2.8rem;
-  font-family: 'ralewayregular', Arial, sans-serif;
-  height: 100vh; }
+  line-height: 3rem;
+  font-family: 'ralewayregular', Arial, sans-serif; }
   body .row {
     margin: 0; }
 
@@ -65,7 +64,8 @@ nav {
     width: 2rem;
     padding: 1.25rem 0 2rem;
     background-color: transparent;
-    border: none; }
+    border: none;
+    z-index: 1; }
     @media (min-width: 992px) {
       nav .navbar-toggle {
         display: none; } }
@@ -82,6 +82,8 @@ nav {
       width: 2rem; }
   nav .hamburger-nav {
     display: none; }
+    nav .hamburger-nav.visible {
+      display: block; }
     @media (min-width: 992px) {
       nav .hamburger-nav {
         display: block; }
@@ -89,7 +91,28 @@ nav {
           color: white; } }
 
 .container-full {
-  width: 100%; }
+  width: 100vw;
+  height: 100vh; }
+
+.container {
+  width: 100%;
+  padding-top: 0; }
+  .container svg {
+    display: none; }
+  @media (min-width: 768px) {
+    .container svg {
+      display: block; }
+      .container svg .graph1, .container svg .graph2 {
+        stroke-width: 2;
+        stroke-miterlimit: 10;
+        fill: none; }
+      .container svg .graph1 {
+        stroke: #e5007d; }
+      .container svg .graph2 {
+        stroke: #4db0e1; } }
+  @media (min-width: 992px) {
+    .container {
+      padding-top: 20rem; } }
 
 header {
   background-color: #4db0e1;
@@ -103,7 +126,7 @@ header {
       top: 0;
       background: linear-gradient(to bottom, white 75%, transparent 100%); } }
   header svg {
-    width: 35%; }
+    width: 50%; }
     header svg .st0, header svg .st1, header svg .st2 {
       fill: white; }
   @media (min-width: 768px) {
