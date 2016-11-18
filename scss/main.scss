@@ -98,9 +98,14 @@ img {
 	max-width: 100%;
 }
 
+.desktop-nav {
+  float: left;
+  width: 25rem;
+  height: 100vh;
+}
+
 nav {
 	background-color: $primary-color;
-
 
   a {
     color: white;
@@ -157,16 +162,27 @@ nav {
     }
 	}
 }
-
-.container-full {
+.wrapper {
   width: 100vw;
   height: 100vh;
+  background-color: $primary-color;
 }
 
-.container {
+.container-full {
+  max-width: 1920px;
+  background: white;
+}
 
-  width: 100%;
+main {
+ overflow: hidden;
+ height: 100vh;
+}
+
+.main-content {
+
   padding-top: 0;
+
+  overflow: scroll;
 
   svg {
     display: none;
@@ -193,21 +209,19 @@ nav {
   }
 
   @media (min-width: $screen-laptop) {
-    padding-top: 20rem;
+
   }
 }
 
 header {
-	background-color: $primary-color;
+	background: $primary-color;
 	padding: 2rem 0;
 	margin-bottom: 3rem;
 
   @media (min-width: $screen-laptop) {
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    top: 0;
-    background: $white-gradient;
+
+    background: white;
+
   }
 
     svg {

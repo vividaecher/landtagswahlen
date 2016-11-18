@@ -56,6 +56,11 @@ h2 {
 img {
   max-width: 100%; }
 
+.desktop-nav {
+  float: left;
+  width: 25rem;
+  height: 100vh; }
+
 nav {
   background-color: #4db0e1; }
   nav a {
@@ -105,41 +110,43 @@ nav {
     nav .hamburger-nav.visible {
       display: flex; }
 
-.container-full {
+.wrapper {
   width: 100vw;
+  height: 100vh;
+  background-color: #4db0e1; }
+
+.container-full {
+  max-width: 1920px;
+  background: white; }
+
+main {
+  overflow: hidden;
   height: 100vh; }
 
-.container {
-  width: 100%;
-  padding-top: 0; }
-  .container svg {
+.main-content {
+  padding-top: 0;
+  overflow: scroll; }
+  .main-content svg {
     display: none; }
   @media (min-width: 768px) {
-    .container svg {
+    .main-content svg {
       display: block; }
-      .container svg .graph1, .container svg .graph2 {
+      .main-content svg .graph1, .main-content svg .graph2 {
         stroke-width: 2;
         stroke-miterlimit: 10;
         fill: none; }
-      .container svg .graph1 {
+      .main-content svg .graph1 {
         stroke: #e5007d; }
-      .container svg .graph2 {
+      .main-content svg .graph2 {
         stroke: #4db0e1; } }
-  @media (min-width: 992px) {
-    .container {
-      padding-top: 20rem; } }
 
 header {
-  background-color: #4db0e1;
+  background: #4db0e1;
   padding: 2rem 0;
   margin-bottom: 3rem; }
   @media (min-width: 992px) {
     header {
-      position: fixed;
-      z-index: 1;
-      width: 100%;
-      top: 0;
-      background: linear-gradient(to bottom, white 75%, transparent 100%); } }
+      background: white; } }
   header svg {
     width: 50%; }
     header svg .st0, header svg .st1, header svg .st2 {
