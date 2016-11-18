@@ -3,6 +3,8 @@ body {
   font-size: 2.1rem;
   line-height: 3rem;
   font-family: 'ralewayregular', Arial, sans-serif; }
+  body.navigation-open {
+    overflow: hidden; }
   body .row {
     margin: 0; }
 
@@ -56,22 +58,26 @@ img {
 
 nav {
   background-color: #4db0e1; }
+  nav a {
+    color: white;
+    font-family: 'ralewaysemibold', Arial, sans-serif;
+    font-size: 2.8rem;
+    line-height: 9rem; }
   nav .navbar-toggle {
     position: absolute;
     right: 2rem;
     display: block;
-    height: 5rem;
     width: 2rem;
-    padding: 1.25rem 0 2rem;
+    padding: 0;
     background-color: transparent;
     border: none;
-    z-index: 1; }
+    z-index: 9; }
     @media (min-width: 992px) {
       nav .navbar-toggle {
         display: none; } }
     nav .navbar-toggle span {
       display: block;
-      height: .2rem;
+      height: .3rem;
       background-color: white;
       margin-bottom: .5rem; }
     nav .navbar-toggle span:nth-child(1) {
@@ -81,14 +87,23 @@ nav {
     nav .navbar-toggle span:nth-child(3) {
       width: 2rem; }
   nav .hamburger-nav {
-    display: none; }
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #1e3145;
+    opacity: .9;
+    list-style: none;
+    z-index: 8;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0; }
     nav .hamburger-nav.visible {
-      display: block; }
-    @media (min-width: 992px) {
-      nav .hamburger-nav {
-        display: block; }
-        nav .hamburger-nav .icon {
-          color: white; } }
+      display: flex; }
 
 .container-full {
   width: 100vw;

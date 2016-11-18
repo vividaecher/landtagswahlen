@@ -8,6 +8,7 @@ $white-gradient: linear-gradient(to bottom, white 75%,transparent 100%);
 
 $fliestext: 2.1rem;
 $headline: 3.6rem;
+$navi-font: 2.8rem;
 $headline-mobile: 2.6rem;
 
 $screen-tablet: 768px;
@@ -20,6 +21,10 @@ body {
   font-size: $fliestext;
   line-height: 3rem;
   font-family: 'ralewayregular', Arial, sans-serif;
+
+  &.navigation-open {
+    overflow: hidden;
+  }
 
   .row {
     margin: 0;
@@ -96,16 +101,23 @@ img {
 nav {
 	background-color: $primary-color;
 
+
+  a {
+    color: white;
+    font-family: 'ralewaysemibold', Arial, sans-serif;
+    font-size: $navi-font;
+    line-height: 9rem;
+  }
+
 	.navbar-toggle {
 		position: absolute;
 		right: 2rem;
 		display: block;
-		height: 5rem;
 		width: 2rem;
-		padding: 1.25rem 0 2rem;
+		padding: 0;
 		background-color: transparent;
 		border: none;
-    z-index: 1;
+    z-index: 9;
 
 		@media (min-width: $screen-laptop) {
 			display: none;
@@ -113,7 +125,7 @@ nav {
 
 		span {
 			display: block;
-			height: .2rem;
+			height: .3rem;
 			background-color: white;
 			margin-bottom: .5rem;
 		}
@@ -125,18 +137,24 @@ nav {
 
 	.hamburger-nav {
 		display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: $secondary-color;
+    opacity: .9;
+    list-style: none;
+    z-index: 8;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0;
 
     &.visible {
-      display: block;
+      display: flex;
     }
-
-		@media (min-width: $screen-laptop) {
-			display: block;
-
-			.icon {
-				color: white;
-			}
-		}
 	}
 }
 
