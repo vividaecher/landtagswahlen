@@ -89,7 +89,7 @@ nav {
   nav a {
     color: white;
     font-family: 'ralewaysemibold', Arial, sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     line-height: 9rem;
     opacity: .5; }
   nav .navbar-toggle {
@@ -222,7 +222,7 @@ header {
   border-radius: 0;
   border: none;
   padding: 1rem;
-  font-size: 1.75rem;
+  font-size: 1.8rem;
   margin: 1rem auto 4rem auto;
   background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d;
   font-family: 'ralewaysemibold', Arial, sans-serif; }

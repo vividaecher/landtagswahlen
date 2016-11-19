@@ -9,9 +9,8 @@ $white-gradient: linear-gradient(to bottom, white 75%,transparent 100%);
 
 $fliestext: 1.8rem;
 $headline: 2.6rem;
-$navi-font: 2.5rem;
+$navi-font: 2.6rem;
 $navi-font-desktop: 1.8rem;
-$headline-mobile: 2.6rem;
 
 $screen-tablet: 768px;
 $screen-laptop: 992px;
@@ -74,7 +73,7 @@ p {
 h1 {
   color: white;
 	font-family: 'ralewayblack', Arial, sans-serif;
-  font-size: $headline-mobile;
+  font-size: $headline;
 
   @media (min-width: $screen-tablet) {
     font-size: $headline;
@@ -330,7 +329,7 @@ header {
   border-radius: 0;
   border: none;
   padding: 1rem;
-  font-size: 1.75rem;
+  font-size: $fliestext;
   margin: 1rem auto 4rem auto;
 	background: $color-gradient, $highlight-color;
   font-family: 'ralewaysemibold', Arial, sans-serif;
