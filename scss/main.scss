@@ -1,6 +1,7 @@
 $primary-color: #4db0e1;
-$secondary-color: #459eca;
+$secondary-color: #1e3145;
 $highlight-color: #e5007d;
+$navi-color: #459eca;
 $text-color: #565656;
 
 $color-gradient: linear-gradient(135deg, rgba(77,176, 225, .5) 0%, transparent 100%);
@@ -99,13 +100,14 @@ img {
 	max-width: 100%;
 }
 
+
 .desktop-nav {
 
   display: none;
 
 @media (min-width: $screen-laptop) {
 
-    background: $secondary-color;
+    background: $navi-color;
     display: flex;
     float: left;
     width: 18rem;
@@ -113,11 +115,8 @@ img {
     text-align: center;
 
     ul {
-      padding: 1.5rem;
-    }
-
-    li {
       list-style: none;
+      flex-direction: column;
     }
 
     a {
@@ -194,8 +193,16 @@ nav {
 }
 
 .container-full {
-  max-width: 1920px;
   background: white;
+  overflow: scroll;
+
+  @media (min-width: $screen-tablet) {
+    max-width: 2000px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    max-width: 1920px;
+  }
 }
 
 main {
@@ -208,15 +215,13 @@ main {
 
 
 .main-content {
-
   padding-top: 0;
-
   svg {
     display: none;
 
-  @media (min-width: $screen-tablet) {
-
+    @media (min-width: $screen-tablet) {
       display: block;
+      width: 100%;
 
       .graph1, .graph2 {
         stroke-width: 2;
@@ -242,21 +247,50 @@ header {
     background: white;
   }
 
-    svg {
-      width: 50%;
-      .st0, .st1, .st2 {
-        fill: white;
-      }
-    }
+  .header-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 
-    @media (min-width: $screen-tablet) {
-      svg {
-        width: 100%;
-      }
+    .logo {
+      order: 1;
+    }
+    .heading1 {
+      order: 2;
+    }
+    .heading2 {
+      order: 3;
     }
 
     @media (min-width: $screen-laptop) {
-      svg {
+      flex-direction: row;
+
+      .logo {
+        order: 2;
+      }
+      .heading1 {
+        order: 1;
+
+      }
+      .heading2 {
+        order: 3;
+      }
+
+    }
+    svg {
+      width: 25%;
+
+      .st0, .st1, .st2 {
+        fill: white;
+      }
+
+    @media (min-width: $screen-tablet) {
+        width: 15%;
+    }
+
+    @media (min-width: $screen-laptop) {
+
         .st0 {
           fill: $text-color;
         }
@@ -268,6 +302,7 @@ header {
         }
       }
     }
+  }
 }
 
 .btn {
