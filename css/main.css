@@ -57,9 +57,24 @@ img {
   max-width: 100%; }
 
 .desktop-nav {
-  float: left;
-  width: 25rem;
-  height: 100vh; }
+  display: none; }
+  @media (min-width: 992px) {
+    .desktop-nav {
+      background: #459eca;
+      display: flex;
+      float: left;
+      width: 18rem;
+      height: 100vh;
+      text-align: center; }
+      .desktop-nav ul {
+        padding: 1.5rem; }
+      .desktop-nav li {
+        list-style: none; }
+      .desktop-nav a {
+        color: white;
+        font-family: 'ralewaysemibold', Arial, sans-serif;
+        font-size: 1.8rem;
+        background: #4db0e1; } }
 
 nav {
   background-color: #4db0e1; }
@@ -99,7 +114,7 @@ nav {
     left: 0;
     right: 0;
     top: 0;
-    background: #1e3145;
+    background: #459eca;
     opacity: .9;
     list-style: none;
     z-index: 8;
@@ -120,25 +135,26 @@ nav {
   background: white; }
 
 main {
-  overflow: hidden;
   height: 100vh; }
+  @media (min-width: 992px) {
+    main {
+      overflow: scroll; } }
 
 .main-content {
-  padding-top: 0;
-  overflow: scroll; }
+  padding-top: 0; }
   .main-content svg {
     display: none; }
-  @media (min-width: 768px) {
-    .main-content svg {
-      display: block; }
-      .main-content svg .graph1, .main-content svg .graph2 {
-        stroke-width: 2;
-        stroke-miterlimit: 10;
-        fill: none; }
-      .main-content svg .graph1 {
-        stroke: #e5007d; }
-      .main-content svg .graph2 {
-        stroke: #4db0e1; } }
+    @media (min-width: 768px) {
+      .main-content svg {
+        display: block; }
+        .main-content svg .graph1, .main-content svg .graph2 {
+          stroke-width: 2;
+          stroke-miterlimit: 10;
+          fill: none; }
+        .main-content svg .graph1 {
+          stroke: #e5007d; }
+        .main-content svg .graph2 {
+          stroke: #4db0e1; } }
 
 header {
   background: #4db0e1;

@@ -1,5 +1,5 @@
 $primary-color: #4db0e1;
-$secondary-color: #1e3145;
+$secondary-color: #459eca;
 $highlight-color: #e5007d;
 $text-color: #565656;
 
@@ -9,6 +9,7 @@ $white-gradient: linear-gradient(to bottom, white 75%,transparent 100%);
 $fliestext: 2.1rem;
 $headline: 3.6rem;
 $navi-font: 2.8rem;
+$navi-font-desktop: 1.8rem;
 $headline-mobile: 2.6rem;
 
 $screen-tablet: 768px;
@@ -99,9 +100,33 @@ img {
 }
 
 .desktop-nav {
-  float: left;
-  width: 25rem;
-  height: 100vh;
+
+  display: none;
+
+@media (min-width: $screen-laptop) {
+
+    background: $secondary-color;
+    display: flex;
+    float: left;
+    width: 18rem;
+    height: 100vh;
+    text-align: center;
+
+    ul {
+      padding: 1.5rem;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      color: white;
+      font-family: 'ralewaysemibold', Arial, sans-serif;
+      font-size: $navi-font-desktop;
+      background: $primary-color;
+    }
+  }
 }
 
 nav {
@@ -174,24 +199,23 @@ nav {
 }
 
 main {
- overflow: hidden;
  height: 100vh;
+
+  @media (min-width: $screen-laptop) {
+    overflow: scroll;
+  }
 }
+
 
 .main-content {
 
   padding-top: 0;
 
-  overflow: scroll;
-
   svg {
     display: none;
-  }
-
 
   @media (min-width: $screen-tablet) {
 
-    svg {
       display: block;
 
       .graph1, .graph2 {
@@ -207,10 +231,6 @@ main {
       }
     }
   }
-
-  @media (min-width: $screen-laptop) {
-
-  }
 }
 
 header {
@@ -219,9 +239,7 @@ header {
 	margin-bottom: 3rem;
 
   @media (min-width: $screen-laptop) {
-
     background: white;
-
   }
 
     svg {
