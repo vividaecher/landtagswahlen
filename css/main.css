@@ -1,6 +1,6 @@
 body {
   color: #565656;
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   line-height: 3rem;
   font-family: 'ralewayregular', Arial, sans-serif; }
   body.navigation-open {
@@ -27,6 +27,7 @@ a {
   color: #e5007d; }
   a:hover, a:focus {
     color: #4db0e1;
+    opacity: 1;
     text-decoration: none; }
 
 p {
@@ -38,14 +39,14 @@ h1 {
   font-size: 2.6rem; }
   @media (min-width: 768px) {
     h1 {
-      font-size: 3.6rem;
+      font-size: 2.6rem;
       text-align: left; } }
   @media (min-width: 992px) {
     h1 {
       color: #565656; } }
 
 h2, h3 {
-  font-size: 3.6rem;
+  font-size: 2.6rem;
   font-family: 'ralewaysemibold', Arial, sans-serif;
   text-transform: uppercase; }
 
@@ -58,17 +59,25 @@ img {
 
 .desktop-nav {
   display: none; }
+  .desktop-nav a {
+    opacity: 1; }
   @media (min-width: 992px) {
     .desktop-nav {
       background: #459eca;
-      display: flex;
       float: left;
       width: 18rem;
       height: 100vh;
-      text-align: center; }
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow-y: scroll; }
       .desktop-nav ul {
         list-style: none;
-        flex-direction: column; }
+        padding: 0 2rem; }
+        .desktop-nav ul li {
+          padding: 2rem; }
       .desktop-nav a {
         color: white;
         font-family: 'ralewaysemibold', Arial, sans-serif;
@@ -80,8 +89,9 @@ nav {
   nav a {
     color: white;
     font-family: 'ralewaysemibold', Arial, sans-serif;
-    font-size: 2.8rem;
-    line-height: 9rem; }
+    font-size: 2.5rem;
+    line-height: 9rem;
+    opacity: .5; }
   nav .navbar-toggle {
     position: absolute;
     right: 2rem;
@@ -114,13 +124,14 @@ nav {
     right: 0;
     top: 0;
     background: #1e3145;
-    opacity: .9;
     list-style: none;
     z-index: 8;
     text-align: center;
     flex-direction: column;
     justify-content: center;
     padding: 2rem 0; }
+    nav .hamburger-nav .current-mobile {
+      opacity: 1; }
     nav .hamburger-nav.visible {
       display: flex; }
 
@@ -173,7 +184,8 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
     header .header-flex .logo {
       order: 1; }
     header .header-flex .heading1 {
@@ -190,7 +202,7 @@ header {
         header .header-flex .heading2 {
           order: 3; } }
     header .header-flex svg {
-      width: 25%; }
+      width: 50%; }
       header .header-flex svg .st0, header .header-flex svg .st1, header .header-flex svg .st2 {
         fill: white; }
       @media (min-width: 768px) {
