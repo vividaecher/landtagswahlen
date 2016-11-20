@@ -105,20 +105,15 @@ img {
 
   display: none;
 
-  a {
-    opacity: 1;
-  }
-
 @media (min-width: $screen-laptop) {
 
-    background: $navi-color;
     float: left;
-    width: 18rem;
+    width: 17rem;
     height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     overflow-y: scroll;
 
@@ -127,7 +122,25 @@ img {
       padding: 0 2rem;
 
       li {
-        padding: 2rem;
+        border-bottom: $navi-color;
+        border-width: 0.1rem;
+        border-style: solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding: 4rem 2.2rem;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        &.current {
+          background: $color-gradient, $highlight-color;
+
+          &:hover {
+            background: darken( $highlight-color, .5% );
+          }
+        }
       }
     }
 
@@ -135,8 +148,11 @@ img {
       color: white;
       font-family: 'ralewaysemibold', Arial, sans-serif;
       font-size: $navi-font-desktop;
-      background: $primary-color;
+      opacity: 1;
 
+      &:hover {
+        background: darken( $primary-color, 5% );
+      }
     }
   }
 }
@@ -239,7 +255,7 @@ main {
     @media (min-width: $screen-tablet) {
       display: block;
       width: 100%;
-
+      padding: 0;
       .graph1, .graph2 {
         stroke-width: 2;
         stroke-miterlimit: 10;
@@ -283,6 +299,7 @@ header {
 
     @media (min-width: $screen-laptop) {
       flex-direction: row;
+      justify-content: space-around;
 
       .logo {
         order: 2;

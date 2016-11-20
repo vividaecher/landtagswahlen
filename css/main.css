@@ -59,30 +59,41 @@ img {
 
 .desktop-nav {
   display: none; }
-  .desktop-nav a {
-    opacity: 1; }
   @media (min-width: 992px) {
     .desktop-nav {
-      background: #459eca;
       float: left;
-      width: 18rem;
+      width: 17rem;
       height: 100vh;
       text-align: center;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       overflow-y: scroll; }
       .desktop-nav ul {
         list-style: none;
         padding: 0 2rem; }
         .desktop-nav ul li {
-          padding: 2rem; }
+          border-bottom: #459eca;
+          border-width: 0.1rem;
+          border-style: solid;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          padding: 4rem 2.2rem; }
+          .desktop-nav ul li:last-child {
+            border-bottom: none; }
+          .desktop-nav ul li.current {
+            background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d; }
+            .desktop-nav ul li.current:hover {
+              background: #e2007c; }
       .desktop-nav a {
         color: white;
         font-family: 'ralewaysemibold', Arial, sans-serif;
         font-size: 1.8rem;
-        background: #4db0e1; } }
+        opacity: 1; }
+        .desktop-nav a:hover {
+          background: #37a6dd; } }
 
 nav {
   background-color: #4db0e1; }
@@ -163,7 +174,8 @@ main {
     @media (min-width: 768px) {
       .main-content svg {
         display: block;
-        width: 100%; }
+        width: 100%;
+        padding: 0; }
         .main-content svg .graph1, .main-content svg .graph2 {
           stroke-width: 2;
           stroke-miterlimit: 10;
@@ -194,7 +206,8 @@ header {
       order: 3; }
     @media (min-width: 992px) {
       header .header-flex {
-        flex-direction: row; }
+        flex-direction: row;
+        justify-content: space-around; }
         header .header-flex .logo {
           order: 2; }
         header .header-flex .heading1 {
