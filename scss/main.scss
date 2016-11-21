@@ -107,29 +107,32 @@ h2 {
 		float: left;
 		width: 17rem;
 		height: 100vh;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: center;
 		overflow-y: scroll;
+    display: block;
 
 		ul {
 			list-style: none;
-			padding: 0 2rem;
 
 			li {
 				border-bottom: $navi-color;
-				border-width: 0.1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+				border-width: 0.2rem;
 				border-style: solid;
 				border-top: none;
 				border-left: none;
 				border-right: none;
-				padding: 4rem 2.2rem;
+				padding: 4rem 0;
 
 				&:last-child {
 					border-bottom: none;
 				}
+
+        &:hover {
+  				background: darken($primary-color, 5%);
+  			}
 
 				&.current {
 					background: $color-gradient, $highlight-color;
@@ -139,34 +142,10 @@ h2 {
 					}
 				}
 
-				._icon {
-					display: block;
-					width: 4rem;
-					height: 4rem;
-					margin: 0 auto;
-					background-size: 100%;
-					background-repeat: no-repeat;
-
-					&.-cross {
-						background-image: url("../img/icons/landtagswahlen.svg");
-					}
-
-					&.-diagram {
-						background-image: url("../img/icons/diagram.svg");
-					}
-
-					&.-programs {
-						background-image: url("../img/icons/party-program.svg");
-					}
-
-					&.-question {
-						background-image: url("../img/icons/questionmark.svg");
-					}
-
-					&.-abc {
-						background-image: url("../img/icons/politik-abc.svg");
-					}
-				}
+        img {
+          width: 4rem;
+          align-self: center;
+        }
 			}
 		}
 
@@ -175,10 +154,9 @@ h2 {
 			font-family: 'ralewaysemibold', Arial, sans-serif;
 			font-size: $navi-font-desktop;
 			opacity: 1;
-
-			&:hover {
-				background: darken($primary-color, 5%);
-			}
+      align-self: center;
+      line-height: inherit;
+      padding-top: 1rem;
 		}
 	}
 }

@@ -64,53 +64,41 @@ h2 {
       float: left;
       width: 17rem;
       height: 100vh;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      overflow-y: scroll; }
+      overflow-y: scroll;
+      display: block; }
       .desktop-nav ul {
-        list-style: none;
-        padding: 0 2rem; }
+        list-style: none; }
         .desktop-nav ul li {
           border-bottom: #459eca;
-          border-width: 0.1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: stretch;
+          border-width: 0.2rem;
           border-style: solid;
           border-top: none;
           border-left: none;
           border-right: none;
-          padding: 4rem 2.2rem; }
+          padding: 4rem 0; }
           .desktop-nav ul li:last-child {
             border-bottom: none; }
+          .desktop-nav ul li:hover {
+            background: #37a6dd; }
           .desktop-nav ul li.current {
             background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d; }
             .desktop-nav ul li.current:hover {
               background: #e2007c; }
-          .desktop-nav ul li ._icon {
-            display: block;
+          .desktop-nav ul li img {
             width: 4rem;
-            height: 4rem;
-            margin: 0 auto;
-            background-size: 100%;
-            background-repeat: no-repeat; }
-            .desktop-nav ul li ._icon.-cross {
-              background-image: url("../img/icons/landtagswahlen.svg"); }
-            .desktop-nav ul li ._icon.-diagram {
-              background-image: url("../img/icons/diagram.svg"); }
-            .desktop-nav ul li ._icon.-programs {
-              background-image: url("../img/icons/party-program.svg"); }
-            .desktop-nav ul li ._icon.-question {
-              background-image: url("../img/icons/questionmark.svg"); }
-            .desktop-nav ul li ._icon.-abc {
-              background-image: url("../img/icons/politik-abc.svg"); }
+            align-self: center; }
       .desktop-nav a {
         color: white;
         font-family: 'ralewaysemibold', Arial, sans-serif;
         font-size: 1.8rem;
-        opacity: 1; }
-        .desktop-nav a:hover {
-          background: #37a6dd; } }
+        opacity: 1;
+        align-self: center;
+        line-height: inherit;
+        padding-top: 1rem; } }
 
 nav {
   background-color: #4db0e1; }
