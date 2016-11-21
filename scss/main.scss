@@ -4,8 +4,8 @@ $highlight-color: #e5007d;
 $navi-color: #459eca;
 $text-color: #565656;
 
-$color-gradient: linear-gradient(135deg, rgba(77,176, 225, .5) 0%, transparent 100%);
-$white-gradient: linear-gradient(to bottom, white 75%,transparent 100%);
+$color-gradient: linear-gradient(135deg, rgba(77, 176, 225, .5) 0%, transparent 100%);
+$white-gradient: linear-gradient(to bottom, white 75%, transparent 100%);
 
 $fliestext: 1.8rem;
 $headline: 2.6rem;
@@ -17,153 +17,182 @@ $screen-laptop: 992px;
 $screen-desktop: 1280px;
 
 * {
-  padding: 0;
+	padding: 0;
 }
+
 body {
-  color: $text-color;
-  font-size: $fliestext;
-  line-height: 3rem;
-  font-family: 'ralewayregular', Arial, sans-serif;
+	color: $text-color;
+	font-size: $fliestext;
+	line-height: 3rem;
+	font-family: 'ralewayregular', Arial, sans-serif;
 
-  &.navigation-open {
-    overflow: hidden;
-  }
+	&.navigation-open {
+		overflow: hidden;
+	}
 
-  .row {
-    margin: 0;
-  }
+	.row {
+		margin: 0;
+	}
 }
 
 @font-face {
-    font-family: 'ralewayblack';
-    src: url('../fonts/raleway-black-webfont.woff2') format('woff2'),
-         url('../fonts/raleway-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'ralewayblack';
+	src: url('../fonts/raleway-black-webfont.woff2') format('woff2'),
+	url('../fonts/raleway-black-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'ralewayregular';
-    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
-         url('../fonts/raleway-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'ralewayregular';
+	src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+	url('../fonts/raleway-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'ralewaysemibold';
-    src: url('../fonts/raleway-semibold-webfont.woff2') format('woff2'),
-         url('../fonts/raleway-semibold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'ralewaysemibold';
+	src: url('../fonts/raleway-semibold-webfont.woff2') format('woff2'),
+	url('../fonts/raleway-semibold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 a {
-  color: $highlight-color;
+	color: $highlight-color;
 
-  &:hover, &:focus {
-    color: $primary-color;
-    opacity: 1;
-    text-decoration: none;
-  }
+	&:hover, &:focus {
+		color: $primary-color;
+		opacity: 1;
+		text-decoration: none;
+	}
 }
 
 p {
-  margin-bottom: 25px;
+	margin-bottom: 25px;
 }
 
 h1 {
-  color: white;
+	color: white;
 	font-family: 'ralewayblack', Arial, sans-serif;
-  font-size: $headline;
+	font-size: $headline;
 
-  @media (min-width: $screen-tablet) {
-    font-size: $headline;
-    text-align: left;
-  }
+	@media (min-width: $screen-tablet) {
+		font-size: $headline;
+		text-align: left;
+	}
 
-  @media (min-width: $screen-laptop) {
-    color: $text-color;
-  }
+	@media (min-width: $screen-laptop) {
+		color: $text-color;
+	}
 }
 
 h2, h3 {
-  font-size: $headline;
-  font-family: 'ralewaysemibold', Arial, sans-serif;
-  text-transform: uppercase;
+	font-size: $headline;
+	font-family: 'ralewaysemibold', Arial, sans-serif;
+	text-transform: uppercase;
 }
 
 h2 {
-  margin-bottom: 5rem;
-  text-align: center;
+	margin-bottom: 5rem;
+	text-align: center;
 }
 
 .desktop-nav {
+	display: none;
 
-  display: none;
+	@media (min-width: $screen-laptop) {
 
-@media (min-width: $screen-laptop) {
+		float: left;
+		width: 17rem;
+		height: 100vh;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		overflow-y: scroll;
 
-    float: left;
-    width: 17rem;
-    height: 100vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    overflow-y: scroll;
+		ul {
+			list-style: none;
+			padding: 0 2rem;
 
-    ul {
-      list-style: none;
-      padding: 0 2rem;
+			li {
+				border-bottom: $navi-color;
+				border-width: 0.1rem;
+				border-style: solid;
+				border-top: none;
+				border-left: none;
+				border-right: none;
+				padding: 4rem 2.2rem;
 
-      li {
-        border-bottom: $navi-color;
-        border-width: 0.1rem;
-        border-style: solid;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        padding: 4rem 2.2rem;
+				&:last-child {
+					border-bottom: none;
+				}
 
-        &:last-child {
-          border-bottom: none;
-        }
+				&.current {
+					background: $color-gradient, $highlight-color;
 
-        &.current {
-          background: $color-gradient, $highlight-color;
+					&:hover {
+						background: darken($highlight-color, .5%);
+					}
+				}
 
-          &:hover {
-            background: darken( $highlight-color, .5% );
-          }
-        }
-      }
-    }
+				._icon {
+					display: block;
+					width: 4rem;
+					height: 4rem;
+					margin: 0 auto;
+					background-size: 100%;
+					background-repeat: no-repeat;
 
-    a {
-      color: white;
-      font-family: 'ralewaysemibold', Arial, sans-serif;
-      font-size: $navi-font-desktop;
-      opacity: 1;
+					&.-cross {
+						background-image: url("../img/icons/landtagswahlen.svg");
+					}
 
-      &:hover {
-        background: darken( $primary-color, 5% );
-      }
-    }
-  }
+					&.-diagram {
+						background-image: url("../img/icons/diagram.svg");
+					}
+
+					&.-programs {
+						background-image: url("../img/icons/party-program.svg");
+					}
+
+					&.-question {
+						background-image: url("../img/icons/questionmark.svg");
+					}
+
+					&.-abc {
+						background-image: url("../img/icons/politik-abc.svg");
+					}
+				}
+			}
+		}
+
+		a {
+			color: white;
+			font-family: 'ralewaysemibold', Arial, sans-serif;
+			font-size: $navi-font-desktop;
+			opacity: 1;
+
+			&:hover {
+				background: darken($primary-color, 5%);
+			}
+		}
+	}
 }
 
 nav {
 	background-color: $primary-color;
 
-  a {
-    color: white;
-    font-family: 'ralewaysemibold', Arial, sans-serif;
-    font-size: $navi-font;
-    line-height: 9rem;
-    opacity: .5;
-  }
+	a {
+		color: white;
+		font-family: 'ralewaysemibold', Arial, sans-serif;
+		font-size: $navi-font;
+		line-height: 9rem;
+		opacity: .5;
+	}
 
 	.navbar-toggle {
 		position: absolute;
@@ -173,7 +202,7 @@ nav {
 		padding: 0;
 		background-color: transparent;
 		border: none;
-    z-index: 9;
+		z-index: 9;
 
 		@media (min-width: $screen-laptop) {
 			display: none;
@@ -186,88 +215,94 @@ nav {
 			margin-bottom: .5rem;
 		}
 
-		span:nth-child(1) {width: 3rem;}
-		span:nth-child(2) {width: 2.5rem;}
-		span:nth-child(3) {width: 2rem;}
+		span:nth-child(1) {
+			width: 3rem;
+		}
+		span:nth-child(2) {
+			width: 2.5rem;
+		}
+		span:nth-child(3) {
+			width: 2rem;
+		}
 	}
 
 	.hamburger-nav {
 		display: none;
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    background: $secondary-color;
-    list-style: none;
-    z-index: 8;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem 0;
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+		left: 0;
+		right: 0;
+		top: 0;
+		background: $secondary-color;
+		list-style: none;
+		z-index: 8;
+		text-align: center;
+		flex-direction: column;
+		justify-content: center;
+		padding: 2rem 0;
 
-    .current-mobile {
-      opacity: 1;
-    }
+		.current-mobile {
+			opacity: 1;
+		}
 
-    &.visible {
-      display: flex;
-    }
+		&.visible {
+			display: flex;
+		}
 	}
 }
+
 .wrapper {
-  width: 100vw;
-  height: 100vh;
+	width: 100vw;
+	height: 100vh;
 
-  img {
-    width: 100%;
-    height: auto;
-  }
+	img {
+		width: 100%;
+		height: auto;
+	}
 
-  &.landtagswahlen {
-    background: url("../img/landtagswahlen_bg.png") $primary-color;
-    background-position: right;
-    background-repeat: no-repeat;
-  }
+	&.landtagswahlen {
+		background: url("../img/landtagswahlen_bg.png") $primary-color;
+		background-position: right;
+		background-repeat: no-repeat;
+	}
 }
 
 .container-full {
-  background: white;
-  max-width: 1920px;
+	background: white;
+	max-width: 1920px;
 }
 
 main {
- height: 100vh;
+	height: 100vh;
 
-  @media (min-width: $screen-laptop) {
-    overflow: scroll;
-  }
+	@media (min-width: $screen-laptop) {
+		overflow: scroll;
+	}
 }
 
-
 .main-content {
-  padding-top: 0;
-  svg {
-    display: none;
+	padding-top: 0;
+	svg {
+		display: none;
 
-    @media (min-width: $screen-tablet) {
-      display: block;
-      width: 100%;
-      padding: 0;
-      .graph1, .graph2 {
-        stroke-width: 2;
-        stroke-miterlimit: 10;
-        fill: none;
-      }
-      .graph1 {
-        stroke: $highlight-color;
-      }
-      .graph2 {
-        stroke: $primary-color;
-      }
-    }
-  }
+		@media (min-width: $screen-tablet) {
+			display: block;
+			width: 100%;
+			padding: 0;
+			.graph1, .graph2 {
+				stroke-width: 2;
+				stroke-miterlimit: 10;
+				fill: none;
+			}
+			.graph1 {
+				stroke: $highlight-color;
+			}
+			.graph2 {
+				stroke: $primary-color;
+			}
+		}
+	}
 }
 
 header {
@@ -275,89 +310,89 @@ header {
 	padding: 2rem 0;
 	margin-bottom: 3rem;
 
-  @media (min-width: $screen-laptop) {
-    background: white;
-  }
+	@media (min-width: $screen-laptop) {
+		background: white;
+	}
 
-  .header-flex {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+	.header-flex {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
 
-    .logo {
-      order: 1;
-    }
-    .heading1 {
-      order: 2;
-    }
-    .heading2 {
-      order: 3;
-    }
+		.logo {
+			order: 1;
+		}
+		.heading1 {
+			order: 2;
+		}
+		.heading2 {
+			order: 3;
+		}
 
-    @media (min-width: $screen-laptop) {
-      flex-direction: row;
-      justify-content: space-around;
+		@media (min-width: $screen-laptop) {
+			flex-direction: row;
+			justify-content: space-around;
 
-      .logo {
-        order: 2;
-      }
-      .heading1 {
-        order: 1;
+			.logo {
+				order: 2;
+			}
+			.heading1 {
+				order: 1;
 
-      }
-      .heading2 {
-        order: 3;
-      }
+			}
+			.heading2 {
+				order: 3;
+			}
 
-    }
-    svg {
-      width: 50%;
+		}
+		svg {
+			width: 50%;
 
-      .st0, .st1, .st2 {
-        fill: white;
-      }
+			.st0, .st1, .st2 {
+				fill: white;
+			}
 
-    @media (min-width: $screen-tablet) {
-        width: 15%;
-    }
+			@media (min-width: $screen-tablet) {
+				width: 15%;
+			}
 
-    @media (min-width: $screen-laptop) {
+			@media (min-width: $screen-laptop) {
 
-        .st0 {
-          fill: $text-color;
-        }
-        .st1 {
-          fill: $highlight-color;
-        }
-        .st2 {
-          fill: $primary-color;
-        }
-      }
-    }
-  }
+				.st0 {
+					fill: $text-color;
+				}
+				.st1 {
+					fill: $highlight-color;
+				}
+				.st2 {
+					fill: $primary-color;
+				}
+			}
+		}
+	}
 }
 
 .btn {
 	color: white;
-  text-transform: uppercase;
-  border-radius: 0;
-  border: none;
-  padding: 1rem;
-  font-size: $fliestext;
-  margin: 1rem auto 4rem auto;
+	text-transform: uppercase;
+	border-radius: 0;
+	border: none;
+	padding: 1rem;
+	font-size: $fliestext;
+	margin: 1rem auto 4rem auto;
 	background: $color-gradient, $highlight-color;
-  font-family: 'ralewaysemibold', Arial, sans-serif;
+	font-family: 'ralewaysemibold', Arial, sans-serif;
 
-  &:focus, &:hover {
-    color: white;
-  }
+	&:focus, &:hover {
+		color: white;
+	}
 
-  @media (min-width: $screen-laptop) {
-    &:hover {
-      background: darken( $highlight-color, .5% );
-      color: white;
-    }
-  }
+	@media (min-width: $screen-laptop) {
+		&:hover {
+			background: darken($highlight-color, .5%);
+			color: white;
+		}
+	}
 }

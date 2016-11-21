@@ -87,6 +87,23 @@ h2 {
             background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d; }
             .desktop-nav ul li.current:hover {
               background: #e2007c; }
+          .desktop-nav ul li ._icon {
+            display: block;
+            width: 4rem;
+            height: 4rem;
+            margin: 0 auto;
+            background-size: 100%;
+            background-repeat: no-repeat; }
+            .desktop-nav ul li ._icon.-cross {
+              background-image: url("../img/icons/landtagswahlen.svg"); }
+            .desktop-nav ul li ._icon.-diagram {
+              background-image: url("../img/icons/diagram.svg"); }
+            .desktop-nav ul li ._icon.-programs {
+              background-image: url("../img/icons/party-program.svg"); }
+            .desktop-nav ul li ._icon.-question {
+              background-image: url("../img/icons/questionmark.svg"); }
+            .desktop-nav ul li ._icon.-abc {
+              background-image: url("../img/icons/politik-abc.svg"); }
       .desktop-nav a {
         color: white;
         font-family: 'ralewaysemibold', Arial, sans-serif;
