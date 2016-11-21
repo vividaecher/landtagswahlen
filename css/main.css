@@ -57,9 +57,6 @@ h2 {
   margin-bottom: 5rem;
   text-align: center; }
 
-img {
-  max-width: 100%; }
-
 .desktop-nav {
   display: none; }
   @media (min-width: 992px) {
@@ -151,18 +148,18 @@ nav {
 
 .wrapper {
   width: 100vw;
-  height: 100vh;
-  background-color: #4db0e1; }
+  height: 100vh; }
+  .wrapper img {
+    width: 100%;
+    height: auto; }
+  .wrapper.landtagswahlen {
+    background: url("../img/landtagswahlen_bg.png") #4db0e1;
+    background-position: right;
+    background-repeat: no-repeat; }
 
 .container-full {
   background: white;
-  overflow: scroll; }
-  @media (min-width: 768px) {
-    .container-full {
-      max-width: 2000px; } }
-  @media (min-width: 1280px) {
-    .container-full {
-      max-width: 1920px; } }
+  max-width: 1920px; }
 
 main {
   height: 100vh; }

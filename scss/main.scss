@@ -98,11 +98,6 @@ h2 {
   text-align: center;
 }
 
-img {
-	max-width: 100%;
-}
-
-
 .desktop-nav {
 
   display: none;
@@ -224,20 +219,22 @@ nav {
 .wrapper {
   width: 100vw;
   height: 100vh;
-  background-color: $primary-color;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &.landtagswahlen {
+    background: url("../img/landtagswahlen_bg.png") $primary-color;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
 }
 
 .container-full {
   background: white;
-  overflow: scroll;
-
-  @media (min-width: $screen-tablet) {
-    max-width: 2000px;
-  }
-
-  @media (min-width: $screen-desktop) {
-    max-width: 1920px;
-  }
+  max-width: 1920px;
 }
 
 main {
