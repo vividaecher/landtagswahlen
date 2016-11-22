@@ -7,57 +7,57 @@
   <meta name="author" content="Dustin Clever und Virginia Dächer">
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1,shrink-to-fit=no">
   <title>Landtagswahlen in NRW 2017</title>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-  <link rel="manifest" href="images/manifest.json">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../images/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="../images/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 </head>
 <body>
   <div class="wrapper landtagswahlen">
     <section class="container-full">
-    <nav class="desktop-nav">
-      <ul>
-        <li class="current"><img src="img/icons/landtagswahlen.svg" alt="Vote-Icon" /><a href="index.html" title="Zur Startseite">Landtagswahlen</a></li>
-        <li><img src="img/icons/diagram.svg" alt="Diagram-Icon" /><a href="content/sonntagsfrage_neu.php" title="Nehme jetzt an der Sonntagsfrage teil.">Sonntagsfrage</a></li>
-        <li><img src="img/icons/party-program.svg" alt="Parteien-Icon" /><a href="#" title="Erfahre mehr über die Parteien der Landtagswahl NRW">Parteiprogramme</a></li>
-        <li><img src="img/icons/questionmark.svg" alt="Fragezeichen-Icon" /><a href="#" title="Warum sollte man wählen gehen?">Warum wählen</a></li>
-        <li><img src="img/icons/politik-abc.svg" alt="Politik-ABC-Icon" /><a href="#" title="Das Fachchinesisch der Politik">Politik ABC</a></li>
-      </ul>
-    </nav>
-    <main>
-    	<header>
-        <nav>
-          <button class="navbar-toggle">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </button>
-          <ul class="hamburger-nav">
-            <li><a class="current-mobile" href="index.html" title="Zur Startseite">Landtagswahlen</a></li>
-            <li><a href="content/sonntagsfrage_neu.php" title="Nehme jetzt an der Sonntagsfrage teil.">Sonntagsfrage</a></li>
-            <li><a href="#" title="Erfahre mehr über die Parteien der Landtagswahl NRW.">Parteiprogramme</a></li>
-            <li><a href="#" title="Warum sollte man wählen gehen?">Warum wählen</a></li>
-            <li><a href="#" title="Das Fachchinesisch der Politik">Politik ABC</a></li>
-          </ul>
-        </nav>
-    		<div class="header-flex">
-          <svg class="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+      <nav class="desktop-nav">
+        <ul>
+          <li><img src="../img/icons/landtagswahlen.svg" alt="Vote-Icon" /><a href="../index.html" title="Zur Startseite">Landtagswahlen</a></li>
+          <li class="current"><img src="../img/icons/diagram.svg" alt="Diagram-Icon" /><a href="sonntagsfrage_neu.php" title="Nehme jetzt an der Sonntagsfrage teil.">Sonntagsfrage</a></li>
+          <li><img src="../img/icons/party-program.svg" alt="Parteien-Icon" /><a href="#" title="Erfahre mehr über die Parteien der Landtagswahl NRW">Parteiprogramme</a></li>
+          <li><img src="../img/icons/questionmark.svg" alt="Fragezeichen-Icon" /><a href="#" title="Warum sollte man wählen gehen?">Warum wählen</a></li>
+          <li><img src="../img/icons/politik-abc.svg" alt="Politik-ABC-Icon" /><a href="#" title="Das Fachchinesisch der Politik">Politik ABC</a></li>
+        </ul>
+      </nav>
+      <main>
+        <header>
+          <nav>
+            <button class="navbar-toggle">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </button>
+            <ul class="hamburger-nav">
+              <li><a class="current-mobile" href="../index.html" title="Zur Startseite">Landtagswahlen</a></li>
+              <li><a href="#" title="Nehme jetzt an der Sonntagsfrage teil.">Sonntagsfrage</a></li>
+              <li><a href="#" title="Erfahre mehr über die Parteien der Landtagswahl NRW.">Parteiprogramme</a></li>
+              <li><a href="#" title="Warum sollte man wählen gehen?">Warum wählen</a></li>
+              <li><a href="#" title="Das Fachchinesisch der Politik">Politik ABC</a></li>
+            </ul>
+          </nav>
+          <div class="header-flex">
+            <svg class="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
             <g>
               <g>
                 <path class="st0" d="M147.4,214.5V186h7.8v21.6H168v6.8H147.4z"/>
@@ -134,57 +134,58 @@
             </g>
           </svg>
           <h2 class="heading1">Die Qual oder die Wahl?</h1>
-          <h2 class="heading2">Es ist Deine Entscheidung!</h1>
-    		</div>
-    	</header>
+            <h2 class="heading2">Es ist Deine Entscheidung!</h1>
+            </div>
+          </header>
 
-    	<section class="main-content">
-    		<h1>Landtagswahlen 2017</h1>
-    		<section class="content-flex">
-    			<article>
-    				<p>Am 14. Mai 2017 ist es wieder soweit - NRW geht wählen. Und das solltest DU auch tun! Im Jungel der Politik herauszufinden was man wählen soll, ist gar nicht so leicht. Außerdem - Was wollen die Politiker eigentlich bewirken? Was für Pläne haben die? Mehrheit und Ministerpräsidenten, Bundeskanzler und Bundespräsident? Ich versteh’ sowieso nur Bahnhof von diesem “Politik-Ding”!</p>
-    			</article>
-    			<article>
-    				<p>Dies sind vielleicht fragen, die du dir stellst. Aber diese Fragen haben viele, auch wir. Und wir versuchen diese zu beantworten. Unter dem Punkt <a href="#">“Sonntagsfrage”</a> kannst du schon vorher eine Wahl treffen und sehen was das Ergebnis wäre, wenn heute der Tag der Wahl wäre.</p>
-    			</article>
-    		</section>
-        <section class="row text-center">
-          <a href="#" class="btn">Zur Sonntagswahl</a>
-        </section>
+          <section class="main-content">
+            <h1>Die Sonntagsfrage</h1>
+            <section class="content-flex">
+              <article>
+        				<p>Jetzt kannst du dich entscheiden. Finde heraus wie das Wahlergebnis ausfallen würde, wenn heute der Tag der Tage wäre. Entscheide dich einfach für eine der sechs Parteien. Auf dem echten Wahlbogen gibt es natürlich viel mehr Parteien. Für dich haben wir die Probewahl auf die sechs größten Parteien beschränkt. Klicke auf eine der Parteien und anschließend auf “Abstimmen”. Dann siehst du sofort die derzeitige Wahlprognose.</p>
+        			</article>
+              <form name="wahlen" method="post" action="sonntagsfrage_ausgabe.php">
+                <fieldset>
+                  <input type="radio" name="partei" value="linke">
+                  <label>Die Linke</label>
+                </fieldset>
+
+                <fieldset>
+                  <input type="radio" name="partei" value="spd">
+                  <label>SPD</label>
+                </fieldset>
+
+                <fieldset>
+                  <input type="radio" name="partei" value="gruenen">
+                  <label>Die Grünen</label>
+                </fieldset>
+
+                <fieldset>
+                  <input type="radio" name="partei" value="fdp">
+                  <label>FDP</label>
+                </fieldset>
+
+                <fieldset>
+                  <input type="radio" name="partei" value="cdu">
+                  <label>CDU</label>
+                </fieldset>
+
+                <fieldset>
+                  <input type="radio" name="partei" value="afd">
+                  <label>AfD</label>
+                </fieldset>
+                <section class="row text-center">
+                  <button type="submit" value="eintragen">Jetzt wählen</button>
+                </section>
+              </form>
+            </section>
+
+          </section>
+        </main>
       </section>
-      <div class="graph-svg">
-        <article>
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             viewBox="0 0 1417 210" style="enable-background:new 0 0 1417 500;" xml:space="preserve">
-            <path class="graph1" d="M0,205.8h7.4c0,0,19.6-65.9,32.4-66.5c12.8-0.6,25.1,23.5,29.6,21.8s21.2-43.6,27.9-43.6s30.2,5.6,33.5,5
-              c3.4-0.6,23.5-50.8,27.9-52.5c4.5-1.7,31.8-28.5,38.5-24.6s19,45.2,22.3,46.4c3.4,1.1,31.8,29,39.7,24.6c7.8-4.5,26.3-36.9,31.8-38
-              s26.8-60.3,32.4-60.9c5.6-0.6,19,16.8,25.7,18.4s19.6,6.7,34.1,27.4c7.8,3.9,23.5,4.5,29,7.8s20.1,11.2,33,12.3s45.8-11.2,57.5-11.7
-              c11.7-0.6,53.1,6.7,57.5,9.5c4.5,2.8,45.2-10.6,55.9-9.5c10.6,1.1,32.4,27.9,38.5,32.4s10.6-14,14.5-15.1s11.7-14,16.8-15.6
-              c5-1.7,6.1,19,10.1,19.6c3.9,0.6,10.6-11.2,13.4-12.3s1.1-8.4,8.9-13.4c7.8-5,17.3-21.2,22.3-22.3c5-1.1,8.9,34.1,11.2,36.3
-              c2.2,2.2,23.5,25.7,28.5,18.4s19-34.1,25.7-39.7s30.7,65.9,35.8,67.6c5,1.7,6.7-16.8,10.6-16.8s11.7-0.6,15.1-6.7
-              c3.4-6.1,20.7-29,25.7-31.3s21.2-17.9,30.2-18.4s20.1,36.3,24.6,36.9c4.5,0.6,25.7,17.9,29.6,20.1c3.9,2.2,7.8,17.3,30.2-16.8
-              s24-25.1,26.3-29.6c2.2-4.5,17.3-48,22.9-47.5s42.5,26.8,45.2,33.5c2.8,6.7,19,17.9,25.1,17.9c6.1,0,26.3,1.7,31.3,5
-              c5,3.4,16.8,12.8,30.2,9.5c13.4-3.4,27.4-6.1,30.7-8.9c3.4-2.8,19.6-55.3,27.9-56.4s25.1,25.7,28.5,26.3s22.9,93.3,31.3,92.7
-              c8.4-0.6,30.7-17.3,37.4-15.6c6.7,1.7,20.7,47.5,26.8,48.6c6.1,1.1,20.7-1.1,27.9,1.1s27.4,12.8,27.4,12.8"/>
-            <path class="graph2" d="M0.7,191.9c0,0,22.3-15.6,30.2-22.9c7.8-7.3,12.8-6.7,15.6-12.8c2.8-6.1,17.3-38,22.3-38s23.5,31.3,31.3,29
-              s24.6-27.9,29.6-28.5c5-0.6,27.4-25.1,34.1-27.4c6.7-2.2,26.8-36.3,31.8-36.3c5,0,33.5,0.6,58.1,29c14-1.1,27.4-37.4,34.6-37.4
-              c7.3,0,25.7,20.1,35.8,17.9c10.1-2.2,51.4-25.1,63.1-23.5c11.7,1.7,40.2,9.5,45.2,14.5s21.2,10.1,29.6,7.8s25.1-6.1,31.3-6.7
-              c6.1-0.6,17.9-8.9,30.2-7.8c12.3,1.1,26.8,2.2,32.4,6.7c5.6,4.5,16.2,27.9,20.7,34.1c4.5,6.1,9.5,15.6,14.5,23.5s11.7-19,18.4-24
-              c6.7-5,19-29,26.3-29.6S656,88,658.8,94.1s1.1,18.4,9.5,20.7c8.4,2.2,24.6-48.6,29.6-48c5,0.6,25.1-47.5,30.7-49.2
-              c5.6-1.7,4.5,8.4,6.1,11.7c1.7,3.4,3.9,39.7,5.6,43s10.1-17.9,16.2-21.8s21.2-4.5,26.3-6.1s12.8-6.1,16.8-11.7s10.1,15.1,11.2,18.4
-              c1.1,3.4,6.7,16.8,10.1,19.6c3.4,2.8,12.3,22.3,15.6,25.7c3.4,3.4,12.8-21.2,16.2-26.8c3.4-5.6,10.6,17.3,10.6,22.3
-              s3.4,12.8,6.7,19.6c3.4,6.7,45.2-69.3,53.1-67.6c7.8,1.7,27.4,19,30.7,19.6c3.4,0.6,21.8,20.7,29,21.2c7.3,0.6,21.8-37.4,35.2-37.4
-              c13.4,0,23.5,16.2,29,16.2s20.7-2.2,25.1-3.4c4.5-1.1,19-5.6,31.3-15.1c12.3-9.5,28.5,0.6,33.5,2.8c5,2.2,17.9,5.6,24.6,8.9
-              c6.7,3.4,22.9,9.5,30.7,7.3c7.8-2.2,49.7-19,58.7-16.2c8.9,2.8,30.2,1.1,35.2,10.1c5,8.9,19,39.7,25.7,39.7s27.9-9.5,34.6-6.1
-              c6.7,3.4,17.3,29.6,24,35.2c6.7,5.6,24.6,29,31.3,30.7c6.7,1.7,21.2,11.7,25.1,12.8"/>
-          </svg>
-        </article>
-      </div>
-    </main>
-    </section>
-</div>
-<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
-<script src="js/bootstrap.min.js" type="text/javascript"></script>
-<script src="js/init.js" type="text/javascript"></script>
-</body>
-</html>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/init.js" type="text/javascript"></script>
+  </body>
+  </html>
