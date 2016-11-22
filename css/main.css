@@ -34,26 +34,22 @@ a {
     text-decoration: none; }
 
 p {
-  margin-bottom: 25px; }
+  margin-bottom: 4rem; }
 
-h1 {
+h2 {
   color: white;
   font-family: 'ralewayblack', Arial, sans-serif;
   font-size: 2.6rem; }
-  @media (min-width: 768px) {
-    h1 {
-      font-size: 2.6rem;
-      text-align: left; } }
   @media (min-width: 992px) {
-    h1 {
+    h2 {
       color: #565656; } }
 
-h2, h3 {
+h1, h3 {
   font-size: 2.6rem;
   font-family: 'ralewaysemibold', Arial, sans-serif;
   text-transform: uppercase; }
 
-h2 {
+h1 {
   margin-bottom: 5rem;
   text-align: center; }
 
@@ -173,22 +169,36 @@ main {
       overflow: scroll; } }
 
 .main-content {
-  padding-top: 0; }
-  .main-content svg {
-    display: none; }
-    @media (min-width: 768px) {
-      .main-content svg {
-        display: block;
-        width: 100%;
-        padding: 0; }
-        .main-content svg .graph1, .main-content svg .graph2 {
-          stroke-width: 2;
-          stroke-miterlimit: 10;
-          fill: none; }
-        .main-content svg .graph1 {
-          stroke: #e5007d; }
-        .main-content svg .graph2 {
-          stroke: #4db0e1; } }
+  padding: 2rem 5rem; }
+  @media (min-width: 992px) {
+    .main-content {
+      padding: 0 10rem; } }
+  .main-content .content-flex {
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 992px) {
+      .main-content .content-flex {
+        flex-direction: row; }
+        .main-content .content-flex article {
+          width: 50%; }
+          .main-content .content-flex article:first-child {
+            padding-right: 4rem; } }
+  .main-content .btn {
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0;
+    border: none;
+    padding: 1rem;
+    font-size: 1.8rem;
+    margin: 1rem auto 4rem auto;
+    background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d;
+    font-family: 'ralewaysemibold', Arial, sans-serif; }
+    .main-content .btn:focus, .main-content .btn:hover {
+      color: white; }
+    @media (min-width: 992px) {
+      .main-content .btn:hover {
+        background: #e2007c;
+        color: white; } }
 
 header {
   background: #4db0e1;
@@ -234,21 +244,19 @@ header {
         header .header-flex svg .st2 {
           fill: #4db0e1; } }
 
-.btn {
-  color: white;
-  text-transform: uppercase;
-  border-radius: 0;
-  border: none;
-  padding: 1rem;
-  font-size: 1.8rem;
-  margin: 1rem auto 4rem auto;
-  background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d;
-  font-family: 'ralewaysemibold', Arial, sans-serif; }
-  .btn:focus, .btn:hover {
-    color: white; }
-  @media (min-width: 992px) {
-    .btn:hover {
-      background: #e2007c;
-      color: white; } }
+.graph-svg {
+  display: none; }
+  @media (min-width: 768px) {
+    .graph-svg {
+      display: block;
+      width: 100%; }
+      .graph-svg .graph1, .graph-svg .graph2 {
+        stroke-width: 2;
+        stroke-miterlimit: 10;
+        fill: none; }
+      .graph-svg .graph1 {
+        stroke: #e5007d; }
+      .graph-svg .graph2 {
+        stroke: #4db0e1; } }
 
 /*# sourceMappingURL=main.css.map */

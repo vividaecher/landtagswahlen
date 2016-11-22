@@ -70,31 +70,26 @@ a {
 }
 
 p {
-	margin-bottom: 25px;
+	margin-bottom: 4rem;
 }
 
-h1 {
+h2 {
 	color: white;
 	font-family: 'ralewayblack', Arial, sans-serif;
 	font-size: $headline;
-
-	@media (min-width: $screen-tablet) {
-		font-size: $headline;
-		text-align: left;
-	}
 
 	@media (min-width: $screen-laptop) {
 		color: $text-color;
 	}
 }
 
-h2, h3 {
+h1, h3 {
 	font-size: $headline;
 	font-family: 'ralewaysemibold', Arial, sans-serif;
 	text-transform: uppercase;
 }
 
-h2 {
+h1 {
 	margin-bottom: 5rem;
 	text-align: center;
 }
@@ -260,24 +255,49 @@ main {
 }
 
 .main-content {
-	padding-top: 0;
-	svg {
-		display: none;
+  padding: 2rem 5rem;
 
-		@media (min-width: $screen-tablet) {
-			display: block;
-			width: 100%;
-			padding: 0;
-			.graph1, .graph2 {
-				stroke-width: 2;
-				stroke-miterlimit: 10;
-				fill: none;
+
+  @media (min-width: $screen-laptop) {
+    padding: 0 10rem;
+	}
+
+  .content-flex {
+    display: flex;
+    flex-direction: column;
+
+		@media (min-width: $screen-laptop) {
+	    flex-direction: row;
+
+			article {
+				width: 50%;
+
+				&:first-child {
+					padding-right: 4rem;
+				}
 			}
-			.graph1 {
-				stroke: $highlight-color;
-			}
-			.graph2 {
-				stroke: $primary-color;
+		}
+  }
+
+	.btn {
+		color: white;
+		text-transform: uppercase;
+		border-radius: 0;
+		border: none;
+		padding: 1rem;
+		font-size: $fliestext;
+		margin: 1rem auto 4rem auto;
+		background: $color-gradient, $highlight-color;
+		font-family: 'ralewaysemibold', Arial, sans-serif;
+
+		&:focus, &:hover {
+			color: white;
+		}
+
+		@media (min-width: $screen-laptop) {
+			&:hover {
+				background: darken($highlight-color, .5%);
+				color: white;
 			}
 		}
 	}
@@ -352,25 +372,22 @@ header {
 	}
 }
 
-.btn {
-	color: white;
-	text-transform: uppercase;
-	border-radius: 0;
-	border: none;
-	padding: 1rem;
-	font-size: $fliestext;
-	margin: 1rem auto 4rem auto;
-	background: $color-gradient, $highlight-color;
-	font-family: 'ralewaysemibold', Arial, sans-serif;
+.graph-svg {
+  display: none;
 
-	&:focus, &:hover {
-		color: white;
-	}
-
-	@media (min-width: $screen-laptop) {
-		&:hover {
-			background: darken($highlight-color, .5%);
-			color: white;
-		}
-	}
+  @media (min-width: $screen-tablet) {
+    display: block;
+    width: 100%;
+    .graph1, .graph2 {
+      stroke-width: 2;
+      stroke-miterlimit: 10;
+      fill: none;
+    }
+    .graph1 {
+      stroke: $highlight-color;
+    }
+    .graph2 {
+      stroke: $primary-color;
+    }
+  }
 }
