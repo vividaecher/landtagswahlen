@@ -133,54 +133,55 @@
               </g>
             </g>
           </svg>
-          <h2 class="heading1">Die Qual oder die Wahl?</h1>
-            <h2 class="heading2">Es ist Deine Entscheidung!</h1>
+          <h2 class="heading1">Die Qual oder die Wahl?</h2>
+            <h2 class="heading2">Es ist Deine Entscheidung!</h2>
             </div>
           </header>
 
-          <section class="main-content">
+          <div class="main-content">
             <h1>Die Sonntagsfrage</h1>
-            <section class="content-flex">
+            <section>
               <article>
-        				<p>Jetzt kannst du dich entscheiden. Finde heraus wie das Wahlergebnis ausfallen würde, wenn heute der Tag der Tage wäre. Entscheide dich einfach für eine der sechs Parteien. Auf dem echten Wahlbogen gibt es natürlich viel mehr Parteien. Für dich haben wir die Probewahl auf die sechs größten Parteien beschränkt. Klicke auf eine der Parteien und anschließend auf “Abstimmen”. Dann siehst du sofort die derzeitige Wahlprognose.</p>
-        			</article>
-              <form name="wahlen" method="post" action="sonntagsfrage_ausgabe.php">
-                <fieldset>
-                  <input type="radio" name="partei" value="linke">
-                  <label>Die Linke</label>
-                </fieldset>
+                <p>Jetzt kannst du dich entscheiden. Finde heraus wie das Wahlergebnis ausfallen würde, wenn heute der Tag der Tage wäre. Entscheide dich einfach für eine der sechs Parteien. Auf dem echten Wahlbogen gibt es natürlich viel mehr Parteien. Für dich haben wir die Probewahl auf die sechs größten Parteien beschränkt. Klicke auf eine der Parteien und anschließend auf “Abstimmen”. Dann siehst du sofort die derzeitige Wahlprognose.</p>
+              </article>
+              <div class="sonntagsfrage-flex">
+                <form name="wahlen" method="post" action="sonntagsfrage_ausgabe.php">
+                  <div>
+                    <input type="radio" name="partei" value="linke">
+                    <label>Die Linke</label>
+                  </div>
 
-                <fieldset>
-                  <input type="radio" name="partei" value="spd">
-                  <label>SPD</label>
-                </fieldset>
+                  <div>
+                    <input type="radio" name="partei" value="spd">
+                    <label>SPD</label>
+                  </div>
 
-                <fieldset>
-                  <input type="radio" name="partei" value="gruenen">
-                  <label>Die Grünen</label>
-                </fieldset>
+                  <div>
+                    <input type="radio" name="partei" value="gruenen">
+                    <label>Die Grünen</label>
+                  </div>
 
-                <fieldset>
-                  <input type="radio" name="partei" value="fdp">
-                  <label>FDP</label>
-                </fieldset>
+                  <div>
+                    <input type="radio" name="partei" value="fdp">
+                    <label>FDP</label>
+                  </div>
 
-                <fieldset>
-                  <input type="radio" name="partei" value="cdu">
-                  <label>CDU</label>
-                </fieldset>
+                  <div>
+                    <input type="radio" name="partei" value="cdu">
+                    <label>CDU</label>
+                  </div>
 
-                <fieldset>
-                  <input type="radio" name="partei" value="afd">
-                  <label>AfD</label>
-                </fieldset>
-                <section class="row text-center">
-                  <button type="submit" value="eintragen">Jetzt wählen</button>
-                </section>
-              </form>
-            </section>
-
-          </section>
+                  <div>
+                    <input type="radio" name="partei" value="afd">
+                    <label>AfD</label>
+                  </div>
+                  <div>
+                    <button type="submit" value="eintragen">Jetzt wählen</button>
+                  </div>
+                </form>
+              </section>
+            </div>
+          </div>
         </main>
       </section>
     </div>

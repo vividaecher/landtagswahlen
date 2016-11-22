@@ -279,7 +279,20 @@ main {
 		}
   }
 
-	.btn {
+	.sonntagsfrage-flex {
+		display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
+		fieldset {
+			border: none;
+			align-self: center;
+		}
+
+	}
+
+.btn {
 		color: white;
 		text-transform: uppercase;
 		border-radius: 0;
@@ -300,6 +313,31 @@ main {
 				color: white;
 			}
 		}
+	}
+
+	button {
+		color: white;
+		text-transform: uppercase;
+		border-radius: 0;
+		border: none;
+		padding: 0.5rem 1rem;
+		font-size: $fliestext;
+		margin: 1rem auto 4rem auto;
+		background: $color-gradient, $highlight-color;
+		font-family: 'ralewaysemibold', Arial, sans-serif;
+		outline: none;
+
+		&:focus, &:hover {
+			color: white;
+		}
+
+		@media (min-width: $screen-laptop) {
+			&:hover {
+				background: darken($highlight-color, .5%);
+				color: white;
+			}
+		}
+
 	}
 }
 
@@ -391,3 +429,18 @@ header {
     }
   }
 }
+
+.diagramm {
+  color: #fff;
+  padding: 15px;
+
+}
+
+.diagramm-linke {
+  background: #DC0000;
+}
+.diagramm-spd {background: #FE0000;}
+.diagramm-gruenen {background: #1FA12D;}
+.diagramm-fdp {background: #FBEB2C;}
+.diagramm-cdu {background: #000;}
+.diagramm-afd {background: #009EE0;}

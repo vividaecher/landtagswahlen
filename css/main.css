@@ -183,6 +183,14 @@ main {
           width: 50%; }
           .main-content .content-flex article:first-child {
             padding-right: 4rem; } }
+  .main-content .sonntagsfrage-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; }
+    .main-content .sonntagsfrage-flex fieldset {
+      border: none;
+      align-self: center; }
   .main-content .btn {
     color: white;
     text-transform: uppercase;
@@ -197,6 +205,23 @@ main {
       color: white; }
     @media (min-width: 992px) {
       .main-content .btn:hover {
+        background: #e2007c;
+        color: white; } }
+  .main-content button {
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.8rem;
+    margin: 1rem auto 4rem auto;
+    background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d;
+    font-family: 'ralewaysemibold', Arial, sans-serif;
+    outline: none; }
+    .main-content button:focus, .main-content button:hover {
+      color: white; }
+    @media (min-width: 992px) {
+      .main-content button:hover {
         background: #e2007c;
         color: white; } }
 
@@ -258,5 +283,27 @@ header {
         stroke: #e5007d; }
       .graph-svg .graph2 {
         stroke: #4db0e1; } }
+
+.diagramm {
+  color: #fff;
+  padding: 15px; }
+
+.diagramm-linke {
+  background: #DC0000; }
+
+.diagramm-spd {
+  background: #FE0000; }
+
+.diagramm-gruenen {
+  background: #1FA12D; }
+
+.diagramm-fdp {
+  background: #FBEB2C; }
+
+.diagramm-cdu {
+  background: #000; }
+
+.diagramm-afd {
+  background: #009EE0; }
 
 /*# sourceMappingURL=main.css.map */
