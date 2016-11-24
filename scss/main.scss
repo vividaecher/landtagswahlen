@@ -73,6 +73,14 @@ p {
 	margin-bottom: 4rem;
 }
 
+h1 {
+	font-size: $headline;
+	font-family: 'ralewaysemibold', Arial, sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 5rem;
+	text-align: center;
+}
+
 h2 {
 	color: white;
 	font-family: 'ralewayblack', Arial, sans-serif;
@@ -83,16 +91,12 @@ h2 {
 	}
 }
 
-h1, h3 {
-	font-size: $headline;
+h3 {
+	font-size: 1.8rem;
 	font-family: 'ralewaysemibold', Arial, sans-serif;
-	text-transform: uppercase;
+	color: $highlight-color;
 }
 
-h1 {
-	margin-bottom: 5rem;
-	text-align: center;
-}
 
 .desktop-nav {
 	display: none;
@@ -433,7 +437,16 @@ header {
 .diagramm {
   color: #fff;
   padding: 15px;
+	animation: move 2s linear infinite;
+}
 
+@keyframes move {
+  0% {
+    width: 0;
+  }
+  100% {
+  width: 100%;
+  }
 }
 
 .diagramm-linke {

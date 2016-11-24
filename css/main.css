@@ -36,6 +36,13 @@ a {
 p {
   margin-bottom: 4rem; }
 
+h1 {
+  font-size: 2.6rem;
+  font-family: 'ralewaysemibold', Arial, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+  text-align: center; }
+
 h2 {
   color: white;
   font-family: 'ralewayblack', Arial, sans-serif;
@@ -44,14 +51,10 @@ h2 {
     h2 {
       color: #565656; } }
 
-h1, h3 {
-  font-size: 2.6rem;
+h3 {
+  font-size: 1.8rem;
   font-family: 'ralewaysemibold', Arial, sans-serif;
-  text-transform: uppercase; }
-
-h1 {
-  margin-bottom: 5rem;
-  text-align: center; }
+  color: #e5007d; }
 
 .desktop-nav {
   display: none; }
@@ -286,8 +289,14 @@ header {
 
 .diagramm {
   color: #fff;
-  padding: 15px; }
+  padding: 15px;
+  animation: move 2s linear infinite; }
 
+@keyframes move {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
 .diagramm-linke {
   background: #DC0000; }
 

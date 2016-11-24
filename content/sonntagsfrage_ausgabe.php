@@ -33,9 +33,9 @@
       <nav class="desktop-nav">
         <ul>
           <li><img src="../img/icons/landtagswahlen.svg" alt="Vote-Icon" /><a href="../index.html" title="Zur Startseite">Landtagswahlen</a></li>
-          <li class="current"><img src="../img/icons/diagram.svg" alt="Diagram-Icon" /><a href="sonntagsfrage_neu.php" title="Nehme jetzt an der Sonntagsfrage teil.">Sonntagsfrage</a></li>
+          <li class="current"><img src="../img/icons/diagram.svg" alt="Diagram-Icon" /><a href="sonntagsfrage.php" title="Nehme jetzt an der Sonntagsfrage teil.">Sonntagsfrage</a></li>
           <li><img src="../img/icons/party-program.svg" alt="Parteien-Icon" /><a href="#" title="Erfahre mehr über die Parteien der Landtagswahl NRW">Parteiprogramme</a></li>
-          <li><img src="../img/icons/questionmark.svg" alt="Fragezeichen-Icon" /><a href="#" title="Warum sollte man wählen gehen?">Warum wählen</a></li>
+          <li><img src="../img/icons/questionmark.svg" alt="Fragezeichen-Icon" /><a href="warum-waehlen.html" title="Warum sollte man wählen gehen?">Warum wählen</a></li>
           <li><img src="../img/icons/politik-abc.svg" alt="Politik-ABC-Icon" /><a href="#" title="Das Fachchinesisch der Politik">Politik ABC</a></li>
         </ul>
       </nav>
@@ -49,13 +49,13 @@
             </button>
             <ul class="hamburger-nav">
               <li><a class="current-mobile" href="../index.html" title="Zur Startseite">Landtagswahlen</a></li>
-              <li><a href="#" title="Nehme jetzt an der Sonntagsfrage teil.">Sonntagsfrage</a></li>
+              <li><a href="sonntagsfrage.php" title="Nehme jetzt an der Sonntagsfrage teil.">Sonntagsfrage</a></li>
               <li><a href="#" title="Erfahre mehr über die Parteien der Landtagswahl NRW.">Parteiprogramme</a></li>
-              <li><a href="#" title="Warum sollte man wählen gehen?">Warum wählen</a></li>
+              <li><a href="warum-waehlen.html" title="Warum sollte man wählen gehen?">Warum wählen</a></li>
               <li><a href="#" title="Das Fachchinesisch der Politik">Politik ABC</a></li>
             </ul>
           </nav>
-          
+
       </header>
 
       <div class="main-content">
@@ -106,7 +106,7 @@
         $sum = $party_with_votes[3];
 
         echo "<hr>$label:<br>$votes";
-        echo '<div class="diagramm diagramm-' . ($party) . '" style="width:' . ($votes) . '%">(' . round($votes / $sum * 100, 1) . '%)</div>';
+        echo '<div class="diagramm move diagramm-' . ($party) . '" style="width:' . ($votes) . '%">(' . round($votes / $sum * 100, 1) . '%)</div>';
       }
 
       echo 'Gesamtzahl aller abgegebenen Stimmen: ' . $sum;
@@ -125,7 +125,7 @@
             url: 'destroy_session.php',
             success: function() {
               console.log('Session abgebrochen');
-              window.location.replace("sonntagsfrage_neu.php");
+              window.location.replace("sonntagsfrage.php");
             }
           });
         }
