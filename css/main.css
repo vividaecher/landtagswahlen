@@ -186,14 +186,17 @@ main {
           width: 50%; }
           .main-content .content-flex article:first-child {
             padding-right: 4rem; } }
-  .main-content .sonntagsfrage-flex {
+  .main-content .sonntagsfrage-flex form {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: stretch; }
-    .main-content .sonntagsfrage-flex fieldset {
-      border: none;
-      align-self: center; }
+    justify-content: space-between;
+    align-items: center; }
+  .main-content .sonntagsfrage-flex div {
+    align-self: center; }
+  .main-content .sonntagsfrage-flex label {
+    background: #4db0e1;
+    color: white;
+    padding: 2rem; }
   .main-content .btn {
     color: white;
     text-transform: uppercase;
@@ -229,7 +232,7 @@ main {
         color: white; } }
 
 header {
-  background: #4db0e1;
+  background: #1e3145;
   padding: 2rem 0;
   margin-bottom: 3rem; }
   @media (min-width: 992px) {
@@ -326,32 +329,26 @@ header {
 .clearfix {
   *zoom: 1; }
 
-.diagramm {
+.ausgabe-flex .diagramm {
   color: #fff;
-  padding: 15px;
-  animation: move 2s linear infinite; }
-
+  padding: 1.5rem;
+  animation: move 2s ease-in-out; }
 @keyframes move {
-  0% {
+  from {
     width: 0; }
-  100% {
+  to {
     width: 100%; } }
-.diagramm-linke {
+.ausgabe-flex .diagramm-linke {
   background: #DC0000; }
-
-.diagramm-spd {
+.ausgabe-flex .diagramm-spd {
   background: #FE0000; }
-
-.diagramm-gruenen {
+.ausgabe-flex .diagramm-gruenen {
   background: #1FA12D; }
-
-.diagramm-fdp {
+.ausgabe-flex .diagramm-fdp {
   background: #FBEB2C; }
-
-.diagramm-cdu {
+.ausgabe-flex .diagramm-cdu {
   background: #000; }
-
-.diagramm-afd {
+.ausgabe-flex .diagramm-afd {
   background: #009EE0; }
 
 /*# sourceMappingURL=main.css.map */

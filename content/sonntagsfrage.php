@@ -140,7 +140,6 @@
 
           <div class="main-content">
             <h1>Die Sonntagsfrage</h1>
-            <section>
               <article>
                 <p>Jetzt kannst du dich entscheiden. Finde heraus wie das Wahlergebnis ausfallen würde, wenn heute der Tag der Tage wäre. Entscheide dich einfach für eine der sechs Parteien. Auf dem echten Wahlbogen gibt es natürlich viel mehr Parteien. Für dich haben wir die Probewahl auf die sechs größten Parteien beschränkt. Klicke auf eine der Parteien und anschließend auf “Abstimmen”. Dann siehst du sofort die derzeitige Wahlprognose.</p>
               </article>
@@ -175,12 +174,12 @@
                     <input type="radio" name="partei" value="afd">
                     <label>AfD</label>
                   </div>
-                  <div>
+                  <div class="row text-center">
                     <button type="submit" value="eintragen">Jetzt wählen</button>
                   </div>
                 </form>
               </div>
-            </section>
+
           </div>
         </main>
       </section>
