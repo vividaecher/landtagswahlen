@@ -107,17 +107,17 @@ h3 {
 		width: 17rem;
 		height: 100vh;
 		overflow-y: scroll;
-    display: block;
+		display: block;
 
 		ul {
 			list-style: none;
 
 			li {
 				border-bottom: $navi-color;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: stretch;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: stretch;
 				border-width: 0.2rem;
 				border-style: solid;
 				border-top: none;
@@ -129,9 +129,9 @@ h3 {
 					border-bottom: none;
 				}
 
-        &:hover {
-  				background: darken($primary-color, 5%);
-  			}
+				&:hover {
+					background: darken($primary-color, 5%);
+				}
 
 				&.current {
 					background: $color-gradient, $highlight-color;
@@ -141,10 +141,10 @@ h3 {
 					}
 				}
 
-        img {
-          width: 4rem;
-          align-self: center;
-        }
+				img {
+					width: 4rem;
+					align-self: center;
+				}
 			}
 		}
 
@@ -153,9 +153,9 @@ h3 {
 			font-family: 'ralewaysemibold', Arial, sans-serif;
 			font-size: $navi-font-desktop;
 			opacity: 1;
-      align-self: center;
-      line-height: inherit;
-      padding-top: 1rem;
+			align-self: center;
+			line-height: inherit;
+			padding-top: 1rem;
 		}
 	}
 }
@@ -259,19 +259,19 @@ main {
 }
 
 .main-content {
-  padding: 2rem 5rem;
+	padding: 2rem 5rem;
 
 
-  @media (min-width: $screen-laptop) {
-    padding: 0 10rem;
+	@media (min-width: $screen-laptop) {
+		padding: 0 10rem;
 	}
 
-  .content-flex {
-    display: flex;
-    flex-direction: column;
+	.content-flex {
+		display: flex;
+		flex-direction: column;
 
 		@media (min-width: $screen-laptop) {
-	    flex-direction: row;
+			flex-direction: row;
 
 			article {
 				width: 50%;
@@ -281,13 +281,13 @@ main {
 				}
 			}
 		}
-  }
+	}
 
 	.sonntagsfrage-flex {
 		display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
+		flex-direction: row;
+		justify-content: center;
+		align-items: stretch;
 
 		fieldset {
 			border: none;
@@ -296,7 +296,7 @@ main {
 
 	}
 
-.btn {
+	.btn {
 		color: white;
 		text-transform: uppercase;
 		border-radius: 0;
@@ -415,42 +415,95 @@ header {
 }
 
 .graph-svg {
-  display: none;
+	display: none;
 
-  @media (min-width: $screen-tablet) {
-    display: block;
-    width: 100%;
-    .graph1, .graph2 {
-      stroke-width: 2;
-      stroke-miterlimit: 10;
-      fill: none;
-    }
-    .graph1 {
-      stroke: $highlight-color;
-    }
-    .graph2 {
-      stroke: $primary-color;
-    }
-  }
+	@media (min-width: $screen-tablet) {
+		display: block;
+		width: 100%;
+		.graph1, .graph2 {
+			stroke-width: 2;
+			stroke-miterlimit: 10;
+			fill: none;
+		}
+		.graph1 {
+			stroke: $highlight-color;
+		}
+		.graph2 {
+			stroke: $primary-color;
+		}
+	}
 }
 
+	/* TAB-NAVIGATION */
+
+	.tab-nav {
+
+
+		width: 100%;
+
+		ul {
+			list-style: none;
+			flex-direction: row;
+			justify-content: space-between;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+			padding: 4rem 2rem;
+
+			&:hover {color: white;}
+		}
+
+		li {
+			background: $primary-color;
+
+			&:hover {background: darken($primary-color, 5%);}
+		}
+
+	.selected {
+		background: $color-gradient, $highlight-color !important;
+
+		a {
+			color: white;
+		}
+	}
+}
+
+.tabcontents {
+	p {
+		margin-bottom: 2rem;
+	}
+}
+
+/* HELPERCLASS CLEARFIX */
+
+.clearfix:before, .clearfix:after {content: "";display: table;}
+.clearfix:after {clear: both;}
+.clearfix {*zoom: 1;}
+
+
+
 .diagramm {
-  color: #fff;
-  padding: 15px;
+	color: #fff;
+	padding: 15px;
 	animation: move 2s linear infinite;
 }
 
 @keyframes move {
-  0% {
-    width: 0;
-  }
-  100% {
-  width: 100%;
-  }
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
 }
 
 .diagramm-linke {
-  background: #DC0000;
+	background: #DC0000;
 }
 .diagramm-spd {background: #FE0000;}
 .diagramm-gruenen {background: #1FA12D;}

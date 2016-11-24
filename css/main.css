@@ -287,6 +287,45 @@ header {
       .graph-svg .graph2 {
         stroke: #4db0e1; } }
 
+/* TAB-NAVIGATION */
+.tab-nav {
+  width: 100%; }
+  .tab-nav ul {
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+  .tab-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 4rem 2rem; }
+    .tab-nav a:hover {
+      color: white; }
+  .tab-nav li {
+    background: #4db0e1; }
+    .tab-nav li:hover {
+      background: #37a6dd; }
+  .tab-nav .selected {
+    background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d !important; }
+    .tab-nav .selected a {
+      color: white; }
+
+.tabcontents p {
+  margin-bottom: 2rem; }
+
+/* HELPERCLASS CLEARFIX */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
 .diagramm {
   color: #fff;
   padding: 15px;
