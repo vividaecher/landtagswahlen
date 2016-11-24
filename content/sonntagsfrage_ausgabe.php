@@ -34,9 +34,9 @@
         <ul>
           <li><img src="../img/icons/landtagswahlen.svg" alt="Vote-Icon" /><a href="../index.html" title="Zur Startseite">Landtagswahlen</a></li>
           <li class="current"><img src="../img/icons/diagram.svg" alt="Diagram-Icon" /><a href="sonntagsfrage.php" title="Nehme jetzt an der Sonntagsfrage teil.">Sonntagsfrage</a></li>
-          <li><img src="../img/icons/party-program.svg" alt="Parteien-Icon" /><a href="#" title="Erfahre mehr über die Parteien der Landtagswahl NRW">Parteiprogramme</a></li>
+          <li><img src="../img/icons/party-program.svg" alt="Parteien-Icon" /><a href="parteiprogramme.html" title="Erfahre mehr über die Parteien der Landtagswahl NRW">Parteiprogramme</a></li>
           <li><img src="../img/icons/questionmark.svg" alt="Fragezeichen-Icon" /><a href="warum-waehlen.html" title="Warum sollte man wählen gehen?">Warum wählen</a></li>
-          <li><img src="../img/icons/politik-abc.svg" alt="Politik-ABC-Icon" /><a href="#" title="Das Fachchinesisch der Politik">Politik ABC</a></li>
+          <li><img src="../img/icons/politik-abc.svg" alt="Politik-ABC-Icon" /><a href="politik-abc.html" title="Das Fachchinesisch der Politik">Politik ABC</a></li>
         </ul>
       </nav>
       <main>
@@ -50,9 +50,9 @@
             <ul class="hamburger-nav">
               <li><a class="current-mobile" href="../index.html" title="Zur Startseite">Landtagswahlen</a></li>
               <li><a href="sonntagsfrage.php" title="Nehme jetzt an der Sonntagsfrage teil.">Sonntagsfrage</a></li>
-              <li><a href="#" title="Erfahre mehr über die Parteien der Landtagswahl NRW.">Parteiprogramme</a></li>
+              <li><a href="parteiprogramme.html" title="Erfahre mehr über die Parteien der Landtagswahl NRW.">Parteiprogramme</a></li>
               <li><a href="warum-waehlen.html" title="Warum sollte man wählen gehen?">Warum wählen</a></li>
-              <li><a href="#" title="Das Fachchinesisch der Politik">Politik ABC</a></li>
+              <li><a href="politik-abc.html" title="Das Fachchinesisch der Politik">Politik ABC</a></li>
             </ul>
           </nav>
 
