@@ -7,10 +7,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="Landtagswahlen 2017 in NRW Warum sollte ich wählen gehen?">
-  <meta name="keywords" content="Landtagswahlen Nordrhein-Westfalen, Politik, NRW, Wieso Wählen, Sonntagsfrage">
+  <meta name="keywords" content="Landtagswahlen Nordrhein-Westfalen, Politik, NRW, Wahlprognose, Sonntagsfrage">
   <meta name="author" content="Dustin Clever und Virginia Dächer">
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1,shrink-to-fit=no">
-  <title>Landtagswahlen in NRW 2017</title>
+  <title>Landtagswahlen in NRW 2017 | Sonntagsfrage Wahlprognose</title>
   <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../css/main.css">
   <link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-icon-57x57.png">
