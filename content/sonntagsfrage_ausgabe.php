@@ -192,7 +192,7 @@
         echo '</div>';
       }
 
-      echo 'Gesamtzahl aller abgegebenen Stimmen: ' . $sum;
+      echo '<article class="message -ergebnis">Gesamtzahl aller abgegebenen Stimmen: <span>' . $sum . '</span></article>';
 
       mysqli_close($db);
       ?>

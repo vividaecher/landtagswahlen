@@ -543,7 +543,7 @@ header {
 			width: 0;
 		}
 		to {
-			width: 100%;
+			//width: 100%;
 		}
 	}
 }
@@ -554,4 +554,17 @@ header {
 .diagramm-fdp {background: #FBEB2C;}
 .diagramm-cdu {background: #000;}
 .diagramm-afd {background: #009EE0;}
+}
+
+.message {
+	&.-ergebnis {
+		margin: 2rem 0;
+		border-top: .1rem solid $light-gray;
+		padding-top: 2rem;
+
+		span {
+			font-weight: bold;
+			color: $highlight-color;
+		}
+	}
 }

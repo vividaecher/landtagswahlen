@@ -359,9 +359,7 @@ header {
   animation: move 2s ease-in-out; }
 @keyframes move {
   from {
-    width: 0; }
-  to {
-    width: 100%; } }
+    width: 0; } }
 .ausgabe-flex .diagramm-linke {
   background: #DC0000; }
 .ausgabe-flex .diagramm-spd {
@@ -374,5 +372,13 @@ header {
   background: #000; }
 .ausgabe-flex .diagramm-afd {
   background: #009EE0; }
+
+.message.-ergebnis {
+  margin: 2rem 0;
+  border-top: 0.1rem solid #eee;
+  padding-top: 2rem; }
+  .message.-ergebnis span {
+    font-weight: bold;
+    color: #e5007d; }
 
 /*# sourceMappingURL=main.css.map */
