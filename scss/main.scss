@@ -545,14 +545,11 @@ header {
 .diagramm {
 	color: #fff;
 	padding: 1.5rem;
-	animation: move 2s ease-in-out;
+	animation: move 1.5s ease-in-out;
 
 	@keyframes move {
 		from {
 			width: 0;
-		}
-		to {
-			//width: 100%;
 		}
 	}
 }

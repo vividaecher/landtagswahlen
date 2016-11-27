@@ -146,37 +146,37 @@
               <div class="sonntagsfrage-flex">
                 <form name="wahlen" method="post" action="sonntagsfrage_ausgabe.php">
                   <div class="partei-box">
-                    <img src="http://placehold.it/200x100" alt="">
+                    <img src="../img/linke-logo.png" alt="">
                     <input type="radio" name="partei" value="linke">
                     <label>Die Linke</label>
                   </div>
 
                   <div class="partei-box">
-                    <img src="http://placehold.it/200x100" alt="">
+                    <img src="../img/spd-logo.png" alt="">
                     <input type="radio" name="partei" value="spd">
                     <label>SPD</label>
                   </div>
 
                   <div class="partei-box">
-                    <img src="http://placehold.it/200x100" alt="">
+                    <img src="../img/gruenen-logo.png" alt="">
                     <input type="radio" name="partei" value="gruenen">
                     <label>Die Grünen</label>
                   </div>
 
                   <div class="partei-box">
-                    <img src="http://placehold.it/200x100" alt="">
+                    <img src="../img/fdp-logo.png" alt="">
                     <input type="radio" name="partei" value="fdp">
                     <label>FDP</label>
                   </div>
 
                   <div class="partei-box">
-                    <img src="http://placehold.it/200x100" alt="">
+                    <img src="../img/cdu-logo.png" alt="">
                     <input type="radio" name="partei" value="cdu">
                     <label>CDU</label>
                   </div>
 
                   <div class="partei-box">
-                    <img src="http://placehold.it/200x100" alt="">
+                    <img src="../img/afd-logo.png" alt="Afd-Logo">
                     <input type="radio" name="partei" value="afd">
                     <label>AfD</label>
                   </div>
