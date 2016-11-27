@@ -32,7 +32,7 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-  <div class="wrapper landtagswahlen">
+  <div class="wrapper sonntagsfrage">
     <section class="container-full">
       <nav class="desktop-nav">
         <ul>
