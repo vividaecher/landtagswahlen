@@ -137,7 +137,7 @@
             <h2 class="heading2">Es ist Deine Entscheidung!</h2>
             </div>
           </header>
-
+        </header>
           <div class="main-content">
             <h1>Die Sonntagsfrage</h1>
               <article>
@@ -145,38 +145,44 @@
               </article>
               <div class="sonntagsfrage-flex">
                 <form name="wahlen" method="post" action="sonntagsfrage_ausgabe.php">
-                  <div>
+                  <div class="partei-box">
+                    <img src="http://placehold.it/200x100" alt="">
                     <input type="radio" name="partei" value="linke">
                     <label>Die Linke</label>
                   </div>
 
-                  <div>
+                  <div class="partei-box">
+                    <img src="http://placehold.it/200x100" alt="">
                     <input type="radio" name="partei" value="spd">
                     <label>SPD</label>
                   </div>
 
-                  <div>
+                  <div class="partei-box">
+                    <img src="http://placehold.it/200x100" alt="">
                     <input type="radio" name="partei" value="gruenen">
                     <label>Die Grünen</label>
                   </div>
 
-                  <div>
+                  <div class="partei-box">
+                    <img src="http://placehold.it/200x100" alt="">
                     <input type="radio" name="partei" value="fdp">
                     <label>FDP</label>
                   </div>
 
-                  <div>
+                  <div class="partei-box">
+                    <img src="http://placehold.it/200x100" alt="">
                     <input type="radio" name="partei" value="cdu">
                     <label>CDU</label>
                   </div>
 
-                  <div>
+                  <div class="partei-box">
+                    <img src="http://placehold.it/200x100" alt="">
                     <input type="radio" name="partei" value="afd">
                     <label>AfD</label>
                   </div>
-                  <div class="row text-center">
-                    <button type="submit" value="eintragen">Jetzt wählen</button>
-                  </div>
+                    <div class="submit text-center">
+                      <button type="submit" value="eintragen">Jetzt wählen</button>
+                    </div>
                 </form>
               </div>
 
