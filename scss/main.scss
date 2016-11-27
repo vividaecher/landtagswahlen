@@ -488,7 +488,6 @@ header {
 		ul {
 			list-style: none;
 			flex-direction: row;
-			justify-content: space-between;
 			display: flex;
 			align-items: center;
 			flex-wrap: wrap;
@@ -504,12 +503,22 @@ header {
 
 		li {
 			background: $primary-color;
+			border-bottom: .3rem solid $navi-color;
+			min-width: 10rem;
+			text-align: center;
+			border-right: .1rem solid $light-gray;
+			margin-top: 1rem;
+
+			&:last-of-type {
+				border-right: none;
+			}
 
 			&:hover {background: darken($primary-color, 5%);}
 		}
 
 	.selected {
 		background: $color-gradient, $highlight-color !important;
+		border-bottom-color: $highlight-color;
 
 		a {
 			color: white;

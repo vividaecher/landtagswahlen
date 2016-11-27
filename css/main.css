@@ -320,7 +320,6 @@ header {
   .tab-nav ul {
     list-style: none;
     flex-direction: row;
-    justify-content: space-between;
     display: flex;
     align-items: center;
     flex-wrap: wrap; }
@@ -331,11 +330,19 @@ header {
     .tab-nav a:hover {
       color: white; }
   .tab-nav li {
-    background: #4db0e1; }
+    background: #4db0e1;
+    border-bottom: 0.3rem solid #459eca;
+    min-width: 10rem;
+    text-align: center;
+    border-right: 0.1rem solid #eee;
+    margin-top: 1rem; }
+    .tab-nav li:last-of-type {
+      border-right: none; }
     .tab-nav li:hover {
       background: #37a6dd; }
   .tab-nav .selected {
-    background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d !important; }
+    background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d !important;
+    border-bottom-color: #e5007d; }
     .tab-nav .selected a {
       color: white; }
 
