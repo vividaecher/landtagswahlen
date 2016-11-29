@@ -333,11 +333,9 @@ main {
 			flex-direction: row;
 
 			article {
-				width: 50%;
+				flex: 1;
+				padding-right: 4rem;
 
-				&:first-child {
-					padding-right: 4rem;
-				}
 			}
 		}
 	}
@@ -372,12 +370,6 @@ main {
 			margin: 1.5rem;
 			border-radius: .2rem;
 			width: 25rem;
-
-			&.-aktiv {
-				border: .1rem solid $highlight-color;
-
-					background: $primary-color;
-			}
 		}
 
 		input[type="radio"] {
@@ -624,6 +616,39 @@ header {
 		span {
 			font-weight: bold;
 			color: $highlight-color;
+		}
+	}
+}
+
+.card-container {
+	display: flex;
+	flex-direction: column;
+
+	@media (min-width: $screen-laptop) {
+		flex-direction: row;
+	}
+
+	.card {
+		flex: 1;
+		padding: 2.5rem;
+		margin: 1rem;
+		color: white;
+		background-color: $primary-color;
+
+		blockquote {
+			text-transform: uppercase;
+			font-family: 'ralewaysemibold', Arial, sans-serif;
+			font-size: 2.1rem;
+			position: relative;
+			padding-left: 5rem;
+		}
+
+		blockquote::before {
+			content: "\201D";
+			font-size: 7rem;
+			display: block;
+			position: absolute;
+			left: 1.5rem;
 		}
 	}
 }

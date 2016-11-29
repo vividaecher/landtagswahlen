@@ -222,9 +222,8 @@ main {
       .main-content .content-flex {
         flex-direction: row; }
         .main-content .content-flex article {
-          width: 50%; }
-          .main-content .content-flex article:first-child {
-            padding-right: 4rem; } }
+          flex: 1;
+          padding-right: 4rem; } }
   .main-content .sonntagsfrage-flex form {
     display: flex;
     flex-direction: column;
@@ -247,9 +246,6 @@ main {
     margin: 1.5rem;
     border-radius: .2rem;
     width: 25rem; }
-    .main-content .sonntagsfrage-flex .partei-box.-aktiv {
-      border: 0.1rem solid #e5007d;
-      background: #4db0e1; }
   .main-content .sonntagsfrage-flex input[type="radio"] {
     display: block;
     margin: 3rem auto 1rem; }
@@ -423,5 +419,30 @@ header {
   .message.-ergebnis span {
     font-weight: bold;
     color: #e5007d; }
+
+.card-container {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 992px) {
+    .card-container {
+      flex-direction: row; } }
+  .card-container .card {
+    flex: 1;
+    padding: 2.5rem;
+    margin: 1rem;
+    color: white;
+    background-color: #4db0e1; }
+    .card-container .card blockquote {
+      text-transform: uppercase;
+      font-family: 'ralewaysemibold', Arial, sans-serif;
+      font-size: 2.1rem;
+      position: relative;
+      padding-left: 5rem; }
+    .card-container .card blockquote::before {
+      content: "\201D";
+      font-size: 7rem;
+      display: block;
+      position: absolute;
+      left: 1.5rem; }
 
 /*# sourceMappingURL=main.css.map */
