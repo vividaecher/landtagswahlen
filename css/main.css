@@ -308,9 +308,6 @@ header {
       width: 50%; }
       header .header-flex svg .st0, header .header-flex svg .st1, header .header-flex svg .st2 {
         fill: white; }
-      @media (min-width: 768px) {
-        header .header-flex svg {
-          width: 15%; } }
       @media (min-width: 992px) {
         header .header-flex svg .st0 {
           fill: #565656; }
