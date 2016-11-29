@@ -375,6 +375,8 @@ main {
 
 			&.-aktiv {
 				border: .1rem solid $highlight-color;
+
+					background: $primary-color;
 			}
 		}
 
@@ -384,7 +386,6 @@ main {
 		}
 
 		label {
-			color: $text-color;
 			text-align: center;
 			padding: 2rem;
 			display: block;

@@ -248,12 +248,12 @@ main {
     border-radius: .2rem;
     width: 25rem; }
     .main-content .sonntagsfrage-flex .partei-box.-aktiv {
-      border: 0.1rem solid #e5007d; }
+      border: 0.1rem solid #e5007d;
+      background: #4db0e1; }
   .main-content .sonntagsfrage-flex input[type="radio"] {
     display: block;
     margin: 3rem auto 1rem; }
   .main-content .sonntagsfrage-flex label {
-    color: #565656;
     text-align: center;
     padding: 2rem;
     display: block; }

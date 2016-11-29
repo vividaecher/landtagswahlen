@@ -147,41 +147,41 @@
               </article>
               <div class="sonntagsfrage-flex">
                 <form name="wahlen" method="post" action="sonntagsfrage_ausgabe.php">
-                  <div class="partei-box">
+                  <label class="partei-box">
                     <img src="../img/linke-logo.png" alt="">
                     <input type="radio" name="partei" value="linke">
-                    <label>Die Linke</label>
-                  </div>
+                    Die Linke
+                  </label>
 
-                  <div class="partei-box">
+                  <label class="partei-box">
                     <img src="../img/spd-logo.png" alt="">
                     <input type="radio" name="partei" value="spd">
-                    <label>SPD</label>
-                  </div>
+                      SPD
+                  </label>
 
-                  <div class="partei-box">
+                  <label class="partei-box">
                     <img src="../img/gruenen-logo.png" alt="">
                     <input type="radio" name="partei" value="gruenen">
-                    <label>Die Grünen</label>
-                  </div>
+                    Die Grünen
+                  </label>
 
-                  <div class="partei-box">
+                  <label class="partei-box">
                     <img src="../img/fdp-logo.png" alt="">
                     <input type="radio" name="partei" value="fdp">
-                    <label>FDP</label>
-                  </div>
+                    FDP
+                  </label>
 
-                  <div class="partei-box">
+                  <label class="partei-box">
                     <img src="../img/cdu-logo.png" alt="">
                     <input type="radio" name="partei" value="cdu">
-                    <label>CDU</label>
-                  </div>
+                    CDU
+                  </label>
 
-                  <div class="partei-box">
+                  <label class="partei-box">
                     <img src="../img/afd-logo.png" alt="Afd-Logo">
                     <input type="radio" name="partei" value="afd">
-                    <label>AfD</label>
-                  </div>
+                    AfD
+                  </label>
                     <div class="submit text-center">
                       <button type="submit" value="eintragen">Jetzt wählen</button>
                     </div>
