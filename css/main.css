@@ -116,6 +116,24 @@ nav {
     background-color: transparent;
     border: none;
     z-index: 9; }
+    nav .navbar-toggle.close-navigation {
+      position: relative;
+      margin-top: 1.5rem; }
+      nav .navbar-toggle.close-navigation span {
+        display: block;
+        height: .3rem;
+        background-color: white;
+        margin-bottom: .5rem;
+        position: absolute; }
+      nav .navbar-toggle.close-navigation span:nth-child(1) {
+        width: 3rem;
+        transform: rotate(-45deg); }
+      nav .navbar-toggle.close-navigation span:nth-child(2) {
+        width: 2.5rem;
+        opacity: 0; }
+      nav .navbar-toggle.close-navigation span:nth-child(3) {
+        width: 3rem;
+        transform: rotate(45deg); }
     @media (min-width: 992px) {
       nav .navbar-toggle {
         display: none; } }
@@ -123,7 +141,8 @@ nav {
       display: block;
       height: .3rem;
       background-color: white;
-      margin-bottom: .5rem; }
+      margin-bottom: .5rem;
+      transition: all .3s ease; }
     nav .navbar-toggle span:nth-child(1) {
       width: 3rem; }
     nav .navbar-toggle span:nth-child(2) {
