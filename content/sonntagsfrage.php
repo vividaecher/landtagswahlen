@@ -147,40 +147,47 @@
               </article>
               <div class="sonntagsfrage-flex">
                 <form name="wahlen" method="post" action="sonntagsfrage_ausgabe.php">
-                  <label class="partei-box">
-                    <img src="../img/linke-logo.png" alt="">
-                    <input type="radio" name="partei" value="linke">
-                    Die Linke
+
+                  <input class="partei-radio" type="radio" name="partei" value="linke" id="linke">
+                  <label for="linke" class="partei-box">
+                    <div>
+                      <img src="../img/linke-logo.svg" alt="Die Linke-Logo">
+                    </div>
                   </label>
 
-                  <label class="partei-box">
-                    <img src="../img/spd-logo.png" alt="">
-                    <input type="radio" name="partei" value="spd">
-                      SPD
+                  <input class="partei-radio" type="radio" name="partei" value="spd" id="spd">
+                  <label for="spd" class="partei-box">
+                    <div>
+                      <img src="../img/spd-logo.svg" alt="SPD-Logo">
+                    </div>
                   </label>
 
-                  <label class="partei-box">
-                    <img src="../img/gruenen-logo.png" alt="">
-                    <input type="radio" name="partei" value="gruenen">
-                    Die Grünen
+                  <input class="partei-radio" type="radio" name="partei" value="gruenen" id="gruenen">
+                  <label for="gruenen" class="partei-box">
+                    <div>
+                      <img src="../img/gruenen-logo.svg" alt="Die Gruenen-Logo">
+                    </div>
                   </label>
 
-                  <label class="partei-box">
-                    <img src="../img/fdp-logo.png" alt="">
-                    <input type="radio" name="partei" value="fdp">
-                    FDP
+                  <input class="partei-radio" type="radio" name="partei" value="fdp" id="fdp">
+                  <label for="fdp" class="partei-box">
+                    <div>
+                      <img src="../img/fdp-logo.svg" alt="FDP-Logo">
+                    </div>
                   </label>
 
-                  <label class="partei-box">
-                    <img src="../img/cdu-logo.png" alt="">
-                    <input type="radio" name="partei" value="cdu">
-                    CDU
+                  <input class="partei-radio" type="radio" name="partei" value="cdu" id="cdu">
+                  <label for="cdu" class="partei-box">
+                    <div>
+                      <img src="../img/cdu-logo.svg" alt="CDU-Logo">
+                    </div>
                   </label>
 
-                  <label class="partei-box">
-                    <img src="../img/afd-logo.png" alt="Afd-Logo">
-                    <input type="radio" name="partei" value="afd">
-                    AfD
+                  <input class="partei-radio" type="radio" name="partei" value="afd" id="afd">
+                  <label for="afd" class="partei-box">
+                    <div>
+                      <img src="../img/afd-logo.svg" alt="AfD-Logo">
+                    </div>
                   </label>
                     <div class="submit text-center">
                       <button type="submit" value="eintragen">Jetzt wählen</button>

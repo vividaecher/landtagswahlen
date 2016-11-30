@@ -227,32 +227,38 @@ main {
   .main-content .sonntagsfrage-flex form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
     @media (min-width: 768px) {
       .main-content .sonntagsfrage-flex form {
         flex-direction: row; } }
-  .main-content .sonntagsfrage-flex img {
-    width: 75%;
-    margin: 1rem auto;
-    display: block; }
   .main-content .sonntagsfrage-flex .partei-box {
-    align-self: center;
-    width: 25%;
-    max-width: 30rem;
+    width: 20rem;
+    height: 20rem;
     background-color: transparent;
-    border: 0.1rem solid #eee;
+    background: #f7f7f7;
     margin: 1.5rem;
-    border-radius: .2rem;
-    width: 25rem; }
-  .main-content .sonntagsfrage-flex input[type="radio"] {
-    display: block;
-    margin: 3rem auto 1rem; }
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .main-content .sonntagsfrage-flex .partei-box div {
+      flex-grow: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .main-content .sonntagsfrage-flex .partei-box div img {
+        max-width: 16rem;
+        max-height: 10rem; }
+  .main-content .sonntagsfrage-flex .partei-radio {
+    display: none; }
+  .main-content .sonntagsfrage-flex input[type="radio"]:checked + label {
+    border: solid 2px #eee; }
   .main-content .sonntagsfrage-flex label {
     text-align: center;
-    padding: 2rem;
-    display: block; }
+    font-weight: normal; }
   .main-content .sonntagsfrage-flex .submit {
     margin: 2rem auto;
     width: 100%; }
