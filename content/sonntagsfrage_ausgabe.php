@@ -166,7 +166,7 @@
           }
         }
         else {
-          echo '<script type="text/javascript">console.log("Stimme bereits abgegeben");</script>';
+          echo '<script type="text/javascript">alert("Du hast bereits eine Stimme abgegeben.");</script>';
         }
 
         if (!$db) {
@@ -189,7 +189,7 @@
         $sum = $party_with_votes[3];
 
         echo '<div class="ausgabe-flex">';
-        echo "<hr>$label:<br>$votes";
+        echo "$label: $votes";
         echo '<div class="move diagramm diagramm-' . ($party) . '" style="width:' . ($votes) . '%">(' . round($votes / $sum * 100, 1) . '%)</div>';
         echo '</div>';
       }
@@ -198,7 +198,7 @@
 
       mysqli_close($db);
       ?>
-      <div>
+      <div class="submit text-center">
         <button id="destroy_session">Refresh</button>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script type="text/javascript">

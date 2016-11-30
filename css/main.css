@@ -392,29 +392,34 @@ header {
 .clearfix {
   *zoom: 1; }
 
-.ausgabe-flex .diagramm {
-  color: #fff;
-  padding: 1.5rem;
-  animation: move 1.5s ease-in-out; }
+.ausgabe-flex {
+  display: flex;
+  flex-direction: column; }
+  .ausgabe-flex .diagramm {
+    color: #fff;
+    padding: .5rem;
+    animation: move 1.5s ease-in-out;
+    font-weight: bold;
+    margin-bottom: 2rem; }
 @keyframes move {
   from {
     width: 0; } }
-.ausgabe-flex .diagramm-linke {
-  background: #DC0000; }
-.ausgabe-flex .diagramm-spd {
-  background: #FE0000; }
-.ausgabe-flex .diagramm-gruenen {
-  background: #1FA12D; }
-.ausgabe-flex .diagramm-fdp {
-  background: #FBEB2C; }
-.ausgabe-flex .diagramm-cdu {
-  background: #000; }
-.ausgabe-flex .diagramm-afd {
-  background: #009EE0; }
+  .ausgabe-flex .diagramm-linke {
+    background: #DC0000; }
+  .ausgabe-flex .diagramm-spd {
+    background: #FE0000; }
+  .ausgabe-flex .diagramm-gruenen {
+    background: #1FA12D; }
+  .ausgabe-flex .diagramm-fdp {
+    background: #FBEB2C; }
+  .ausgabe-flex .diagramm-cdu {
+    background: #000; }
+  .ausgabe-flex .diagramm-afd {
+    background: #009EE0; }
 
 .message.-ergebnis {
   margin: 2rem 0;
-  border-top: 0.1rem solid #eee;
+  border-top: 0.2rem solid #eee;
   padding-top: 2rem; }
   .message.-ergebnis span {
     font-weight: bold;

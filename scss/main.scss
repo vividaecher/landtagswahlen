@@ -586,11 +586,15 @@ header {
 .clearfix {*zoom: 1;}
 
 .ausgabe-flex {
+	display: flex;
+	flex-direction: column;
 
 .diagramm {
 	color: #fff;
-	padding: 1.5rem;
+	padding: .5rem;
 	animation: move 1.5s ease-in-out;
+	font-weight: bold;
+	margin-bottom: 2rem;
 
 	@keyframes move {
 		from {
@@ -610,7 +614,7 @@ header {
 .message {
 	&.-ergebnis {
 		margin: 2rem 0;
-		border-top: .1rem solid $light-gray;
+		border-top: .2rem solid $light-gray;
 		padding-top: 2rem;
 
 		span {
