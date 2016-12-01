@@ -244,6 +244,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
+    .main-content .sonntagsfrage-flex .partei-box:hover {
+      border: solid 0.2rem #eee; }
     .main-content .sonntagsfrage-flex .partei-box div {
       flex-grow: 2;
       display: flex;
@@ -255,10 +257,8 @@ main {
   .main-content .sonntagsfrage-flex .partei-radio {
     display: none; }
   .main-content .sonntagsfrage-flex input[type="radio"]:checked + label {
-    border: solid 2px #eee; }
-  .main-content .sonntagsfrage-flex label {
-    text-align: center;
-    font-weight: normal; }
+    border: solid 0.2rem #eee;
+    background: white; }
   .main-content .sonntagsfrage-flex .submit {
     margin: 2rem auto;
     width: 100%; }
@@ -440,20 +440,28 @@ header {
   .card-container .card {
     flex: 1;
     padding: 2.5rem;
-    margin: 1rem;
+    margin: 1rem 0;
     color: white;
     background-color: #4db0e1; }
+    @media (min-width: 992px) {
+      .card-container .card {
+        margin: 0 1rem; }
+        .card-container .card:first-child {
+          margin-left: 0; }
+        .card-container .card:last-child {
+          margin-right: 0; } }
     .card-container .card blockquote {
       text-transform: uppercase;
       font-family: 'ralewaysemibold', Arial, sans-serif;
       font-size: 2.1rem;
       position: relative;
-      padding-left: 5rem; }
+      border: none;
+      padding-left: 3rem; }
     .card-container .card blockquote::before {
       content: "\201D";
       font-size: 7rem;
       display: block;
       position: absolute;
-      left: 1.5rem; }
+      left: 0rem; }
 
 /*# sourceMappingURL=main.css.map */

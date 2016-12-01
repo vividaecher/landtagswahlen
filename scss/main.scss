@@ -366,6 +366,10 @@ main {
 			align-items: center;
 			justify-content: center;
 
+			&:hover {
+				border: solid .2rem $light-gray;
+			}
+
 			div {
 				flex-grow: 2;
 				display: flex;
@@ -384,15 +388,9 @@ main {
 		}
 
 		input[type="radio"]:checked + label{
-			border: solid 2px $light-gray;
+			border: solid .2rem $light-gray;
+			background: white;
 		}
-
-		label {
-			text-align: center;
-			font-weight: normal;
-		}
-
-
 
 		.submit {
 			margin: 2rem auto;
@@ -645,16 +643,30 @@ header {
 	.card {
 		flex: 1;
 		padding: 2.5rem;
-		margin: 1rem;
+		margin: 1rem 0;
 		color: white;
 		background-color: $primary-color;
+
+		@media (min-width: $screen-laptop) {
+
+			margin: 0 1rem;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
 
 		blockquote {
 			text-transform: uppercase;
 			font-family: 'ralewaysemibold', Arial, sans-serif;
 			font-size: 2.1rem;
 			position: relative;
-			padding-left: 5rem;
+			border: none;
+			padding-left: 3rem;
 		}
 
 		blockquote::before {
@@ -662,7 +674,7 @@ header {
 			font-size: 7rem;
 			display: block;
 			position: absolute;
-			left: 1.5rem;
+			left: 0rem;
 		}
 	}
 }
