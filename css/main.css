@@ -65,39 +65,33 @@ h3 {
       height: 100vh;
       overflow-y: scroll;
       display: block; }
-      .desktop-nav ul {
-        list-style: none; }
-        .desktop-nav ul li {
-          border-bottom: #459eca;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: stretch;
-          border-width: 0.2rem;
-          border-style: solid;
-          border-top: none;
-          border-left: none;
-          border-right: none;
-          padding: 4rem 0; }
-          .desktop-nav ul li:last-child {
-            border-bottom: none; }
-          .desktop-nav ul li:hover {
-            background: #37a6dd; }
-          .desktop-nav ul li.current {
-            background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d; }
-            .desktop-nav ul li.current:hover {
-              background: #e2007c; }
-          .desktop-nav ul li img {
-            width: 4rem;
-            align-self: center; }
       .desktop-nav a {
         color: white;
         font-family: 'ralewaysemibold', Arial, sans-serif;
         font-size: 1.8rem;
         opacity: 1;
-        align-self: center;
         line-height: inherit;
-        padding-top: 1rem; } }
+        border-bottom: solid 0.2rem #459eca;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 7rem 0px; }
+        .desktop-nav a:last-child {
+          border-bottom: none; }
+        .desktop-nav a:hover {
+          background: #37a6dd; }
+        .desktop-nav a.current {
+          background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d; }
+          .desktop-nav a.current:hover {
+            background: #e2007c; }
+        .desktop-nav a img {
+          width: 4rem;
+          align-self: center; }
+      .desktop-nav ul {
+        list-style: none; }
+        .desktop-nav ul li {
+          align-self: center;
+          padding-top: .5rem; } }
 
 nav {
   background-color: #4db0e1; }
