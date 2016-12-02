@@ -110,21 +110,32 @@ h3 {
 		overflow-y: scroll;
 		display: block;
 
+		ul {
+			list-style: none;
+
+			li {
+				align-self: center;
+				border-bottom: solid .2rem $navi-color;
+
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+
 		a {
 			color: white;
 			font-family: 'ralewaysemibold', Arial, sans-serif;
 			font-size: $navi-font-desktop;
 			opacity: 1;
 			line-height: inherit;
-			border-bottom: solid .2rem $navi-color;
+			padding: 5rem 0;
+			transition: background .5s ease-in-out;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			padding: 7rem 0px;
+			align-items: center;
 
-			&:last-child {
-				border-bottom: none;
-			}
 
 			&:hover {
 				background: darken($primary-color, 5%);
@@ -132,26 +143,21 @@ h3 {
 
 			&.current {
 				background: $color-gradient, $highlight-color;
+				transition: background .5s ease-in-out;
 
 				&:hover {
-				background: darken($highlight-color, .5%);
+					background: darken($highlight-color, .5%);
 				}
 			}
 
 			img {
 				width: 4rem;
 				align-self: center;
+				padding-bottom: .5rem;
 			}
 		}
 
-		ul {
-			list-style: none;
 
-			li {
-				align-self: center;
-				padding-top: .5rem;
-			}
-		}
 	}
 }
 
@@ -336,7 +342,7 @@ main {
 
 	.sonntagsfrage-flex {
 
-	form {
+		form {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -433,6 +439,9 @@ main {
 		}
 
 		@media (min-width: $screen-laptop) {
+
+
+			transition: background 5s ease-in-out;
 			&:hover {
 				background: darken($highlight-color, .5%);
 				color: white;
@@ -527,43 +536,43 @@ header {
 	}
 }
 
-	/* TAB-NAVIGATION */
+/* TAB-NAVIGATION */
 
-	.tab-nav {
+.tab-nav {
 
 
-		width: 100%;
+	width: 100%;
 
-		ul {
-			list-style: none;
-			flex-direction: row;
-			display: flex;
-			align-items: center;
-			flex-wrap: wrap;
+	ul {
+		list-style: none;
+		flex-direction: row;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+		padding: 4rem 2rem;
+
+		&:hover {color: white;}
+	}
+
+	li {
+		background: $primary-color;
+		border-bottom: .3rem solid $navi-color;
+		min-width: 10rem;
+		text-align: center;
+		border-right: .1rem solid $light-gray;
+		margin-top: 1rem;
+
+		&:last-of-type {
+			border-right: none;
 		}
 
-		a {
-			text-decoration: none;
-			color: white;
-			padding: 4rem 2rem;
-
-			&:hover {color: white;}
-		}
-
-		li {
-			background: $primary-color;
-			border-bottom: .3rem solid $navi-color;
-			min-width: 10rem;
-			text-align: center;
-			border-right: .1rem solid $light-gray;
-			margin-top: 1rem;
-
-			&:last-of-type {
-				border-right: none;
-			}
-
-			&:hover {background: darken($primary-color, 5%);}
-		}
+		&:hover {background: darken($primary-color, 5%);}
+	}
 
 	.selected {
 		background: $color-gradient, $highlight-color !important;
@@ -591,26 +600,26 @@ header {
 	display: flex;
 	flex-direction: column;
 
-.diagramm {
-	color: #fff;
-	padding: .5rem;
-	animation: move 1.5s ease-in-out;
-	font-weight: bold;
-	margin-bottom: 2rem;
+	.diagramm {
+		color: #fff;
+		padding: .5rem;
+		animation: move 1.5s ease-in-out;
+		font-weight: bold;
+		margin-bottom: 2rem;
 
-	@keyframes move {
-		from {
-			width: 0;
+		@keyframes move {
+			from {
+				width: 0;
+			}
 		}
 	}
-}
 
-.diagramm-linke {background: #DC0000;}
-.diagramm-spd {background: #FE0000;}
-.diagramm-gruenen {background: #1FA12D;}
-.diagramm-fdp {background: #FBEB2C;}
-.diagramm-cdu {background: #000;}
-.diagramm-afd {background: #009EE0;}
+	.diagramm-linke {background: #DC0000;}
+	.diagramm-spd {background: #FE0000;}
+	.diagramm-gruenen {background: #1FA12D;}
+	.diagramm-fdp {background: #FBEB2C;}
+	.diagramm-cdu {background: #000;}
+	.diagramm-afd {background: #009EE0;}
 }
 
 .message {

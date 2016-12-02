@@ -65,33 +65,36 @@ h3 {
       height: 100vh;
       overflow-y: scroll;
       display: block; }
+      .desktop-nav ul {
+        list-style: none; }
+        .desktop-nav ul li {
+          align-self: center;
+          border-bottom: solid 0.2rem #459eca; }
+          .desktop-nav ul li:last-child {
+            border-bottom: none; }
       .desktop-nav a {
         color: white;
         font-family: 'ralewaysemibold', Arial, sans-serif;
         font-size: 1.8rem;
         opacity: 1;
         line-height: inherit;
-        border-bottom: solid 0.2rem #459eca;
+        padding: 5rem 0;
+        transition: background .5s ease-in-out;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 7rem 0px; }
-        .desktop-nav a:last-child {
-          border-bottom: none; }
+        align-items: center; }
         .desktop-nav a:hover {
           background: #37a6dd; }
         .desktop-nav a.current {
-          background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d; }
+          background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d;
+          transition: background .5s ease-in-out; }
           .desktop-nav a.current:hover {
             background: #e2007c; }
         .desktop-nav a img {
           width: 4rem;
-          align-self: center; }
-      .desktop-nav ul {
-        list-style: none; }
-        .desktop-nav ul li {
           align-self: center;
-          padding-top: .5rem; } }
+          padding-bottom: .5rem; } }
 
 nav {
   background-color: #4db0e1; }
@@ -286,9 +289,11 @@ main {
     .main-content button:focus, .main-content button:hover {
       color: white; }
     @media (min-width: 992px) {
-      .main-content button:hover {
-        background: #e2007c;
-        color: white; } }
+      .main-content button {
+        transition: background 5s ease-in-out; }
+        .main-content button:hover {
+          background: #e2007c;
+          color: white; } }
 
 header {
   background: #1e3145;
