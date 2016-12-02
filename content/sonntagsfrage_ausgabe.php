@@ -200,7 +200,7 @@
       ?>
       <div class="submit text-center">
         <button id="destroy_session">Refresh</button>
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="../js/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script type="text/javascript">
         jQuery(document).ready(function() {
           jQuery("#destroy_session").on("click", destroy);

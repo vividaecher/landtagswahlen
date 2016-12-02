@@ -146,6 +146,7 @@
                 <p>Jetzt kannst du dich entscheiden. Finde heraus wie das Wahlergebnis ausfallen würde, wenn heute der Tag der Tage wäre. Entscheide dich einfach für eine der sechs Parteien. Auf dem echten Wahlbogen gibt es natürlich viel mehr Parteien. Für dich haben wir die Probewahl auf die sechs größten Parteien beschränkt. Klicke auf eine der Parteien und anschließend auf “Abstimmen”. Dann siehst du sofort die derzeitige Wahlprognose.</p>
               </article>
               <div class="sonntagsfrage-flex">
+                <h1>Wähle jetzt eine Partei!</h1>
                 <form name="wahlen" method="post" action="sonntagsfrage_ausgabe.php">
 
                   <input class="partei-radio" type="radio" name="partei" value="linke" id="linke">
@@ -190,7 +191,7 @@
                     </div>
                   </label>
                     <div class="submit text-center">
-                      <button type="submit" value="eintragen">Jetzt wählen</button>
+                      <button disabled type="submit" value="eintragen">Abstimmen</button>
                     </div>
                 </form>
               </div>

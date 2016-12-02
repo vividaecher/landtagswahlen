@@ -292,6 +292,8 @@ main {
     background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d;
     font-family: 'ralewaysemibold', Arial, sans-serif;
     outline: none; }
+    .main-content button[disabled] {
+      background: #ccc; }
     .main-content button:focus, .main-content button:hover {
       color: white; }
     @media (min-width: 992px) {

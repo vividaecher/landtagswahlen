@@ -440,6 +440,11 @@ main {
 		font-family: 'ralewaysemibold', Arial, sans-serif;
 		outline: none;
 
+
+		&[disabled] {
+			background: #ccc;
+		}
+
 		&:focus, &:hover {
 			color: white;
 		}
