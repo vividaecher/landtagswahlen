@@ -131,6 +131,7 @@ h3 {
 			line-height: inherit;
 			padding: 2.5rem 0;
 			display: flex;
+			-moz-box: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
@@ -253,6 +254,7 @@ nav {
 
 		&.visible {
 			display: flex;
+			-moz-box: flex;
 		}
 	}
 }
@@ -332,6 +334,7 @@ main {
 
 	.content-flex {
 		display: flex;
+		-moz-box: flex;
 		flex-direction: column;
 
 		@media (min-width: $screen-laptop) {
@@ -349,6 +352,7 @@ main {
 
 		form {
 			display: flex;
+			-moz-box: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
@@ -371,6 +375,7 @@ main {
 
 			div {
 				display: flex;
+				-moz-box: flex;
 				flex-direction: column;
 				justify-content: center;
 				width: 100%;
@@ -513,6 +518,7 @@ header {
 		}
 		svg {
 			width: 50%;
+			max-width: 30rem;
 
 			.st0, .st1, .st2 {
 				fill: white;
@@ -565,6 +571,7 @@ header {
 		list-style: none;
 		flex-direction: row;
 		display: flex;
+		-moz-box: flex;
 		align-items: center;
 
 		@media (max-width: $screen-tablet) {
@@ -636,6 +643,7 @@ header {
 
 .ausgabe-flex {
 	display: flex;
+	-moz-box: flex;
 	flex-direction: column;
 
 	.diagramm {
@@ -678,45 +686,50 @@ header {
 	flex-direction: column;
 	padding-bottom: 5rem;
 
-	@media (min-width: $screen-laptop) {
+	@media (min-width: $screen-desktop) {
 		flex-direction: row;
 	}
 
 	.card {
-		flex: 1;
 		padding: 2.5rem;
 		margin: 1rem 0;
 		color: white;
 		background-color: $primary-color;
 
-		@media (min-width: $screen-laptop) {
+		p:last-child {
+			margin-bottom: 0;
+		}
 
-			margin: 0 1rem;
+		@media (min-width: $screen-desktop) {
+			width: 30%;
+			margin: 0 2.5%;
 
 			&:first-child {
 				margin-left: 0;
 			}
-
 			&:last-child {
 				margin-right: 0;
 			}
 		}
 
-		blockquote {
+		h3 {
 			text-transform: uppercase;
 			font-family: 'ralewaysemibold', Arial, sans-serif;
 			font-size: 2.1rem;
 			position: relative;
 			border: none;
 			padding-left: 3rem;
+			padding-bottom: 2rem;
+			color: white;
 		}
 
-		blockquote::before {
+		h3::before {
 			content: "\201D";
 			font-size: 7rem;
 			display: block;
 			position: absolute;
-			left: 0rem;
+			top: -3rem;
+			left: 0;
 		}
 	}
 }
