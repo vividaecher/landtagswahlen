@@ -146,6 +146,7 @@
 
       <div class="main-content">
         <h1>Die Sonntagsfrage</h1>
+        <p>Deine Stimme wurde gezählt!</p>
         <?php
         // Prüft den Index $_SESSION["voted"], so dass bei der Abfrage kein Exception geschmissen wird
         // Die Abfrage ist das was nach dem && kommt

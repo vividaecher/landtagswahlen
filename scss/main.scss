@@ -105,7 +105,7 @@ h3 {
 	@media (min-width: $screen-laptop) {
 
 		float: left;
-		width: 17rem;
+		width: 13rem;
 		height: 100vh;
 		overflow-y: scroll;
 		display: block;
@@ -126,15 +126,15 @@ h3 {
 		a {
 			color: white;
 			font-family: 'ralewaysemibold', Arial, sans-serif;
-			font-size: $navi-font-desktop;
+			font-size: 1.5rem;
 			opacity: 1;
 			line-height: inherit;
-			padding: 5rem 0;
-			transition: background .5s ease-in-out;
+			padding: 2.5rem 0;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			cursor: pointer;
 
 
 			&:hover {
@@ -143,7 +143,6 @@ h3 {
 
 			&.current {
 				background: $color-gradient, $highlight-color;
-				transition: background .5s ease-in-out;
 
 				&:hover {
 					background: darken($highlight-color, .5%);
@@ -151,7 +150,7 @@ h3 {
 			}
 
 			img {
-				width: 4rem;
+				width: 2.5rem;
 				align-self: center;
 				padding-bottom: .5rem;
 			}
@@ -319,7 +318,7 @@ main {
 	height: 100vh;
 
 	@media (min-width: $screen-laptop) {
-		overflow: scroll;
+		overflow-y: scroll;
 	}
 }
 
@@ -363,28 +362,30 @@ main {
 		.partei-box {
 			width: 20rem;
 			height: 20rem;
-			background-color: transparent;
-			background: #f7f7f7;
 			margin: 1.5rem;
-			padding: 2rem;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-
-			&:hover {
-				border: solid .2rem $light-gray;
-			}
+			cursor: pointer;
 
 			div {
-				flex-grow: 2;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
+				width: 100%;
+				position: relative;
 
-				img {
-					max-width: 16rem;
-					max-height: 10rem;
+				&:hover{
+					&:before {
+					content: "";
+					background: url(../img/circle.svg) no-repeat;
+					width: 3rem;
+					height: 3rem;
+					position: absolute;
+					top: 1rem;
+					right: 1rem;
+					}
 				}
 			}
 		}
@@ -394,15 +395,26 @@ main {
 		}
 
 		input[type="radio"]:checked + label{
-			border: solid .2rem $light-gray;
-			background: white;
+
+			div {
+				position: relative;
+
+				&:before {
+					content: "";
+					background: url(../img/tick.svg) no-repeat;
+					position: absolute;
+					top: 1rem;
+					right: 1rem;
+					width: 3rem;
+					height: 3rem;
+				}
+			}
 		}
 
 		.submit {
 			margin: 2rem auto;
 			width: 100%;
 		}
-
 	}
 
 	.btn {
@@ -450,9 +462,6 @@ main {
 		}
 
 		@media (min-width: $screen-laptop) {
-
-
-			transition: background 5s ease-in-out;
 			&:hover {
 				background: darken($highlight-color, .5%);
 				color: white;
@@ -490,8 +499,6 @@ header {
 
 		@media (min-width: $screen-laptop) {
 			flex-direction: row;
-			justify-content: space-around;
-
 			.logo {
 				order: 2;
 			}
@@ -559,24 +566,35 @@ header {
 		flex-direction: row;
 		display: flex;
 		align-items: center;
-		flex-wrap: wrap;
+
+		@media (max-width: $screen-tablet) {
+			flex-wrap: wrap;
+		}
 	}
 
 	a {
 		text-decoration: none;
 		color: white;
-		padding: 4rem 2rem;
-
+		padding: 2rem 0;
+		display: block;
+		font-family: 'ralewaysemibold', Arial, sans-serif;
 		&:hover {color: white;}
 	}
 
 	li {
 		background: $primary-color;
 		border-bottom: .3rem solid $navi-color;
-		min-width: 10rem;
+		width: 100%;
 		text-align: center;
 		border-right: .1rem solid $light-gray;
-		margin-top: 1rem;
+
+		@media (max-width: $screen-tablet) {
+			margin-top: 1rem;
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
 
 		&:last-of-type {
 			border-right: none;
@@ -598,6 +616,15 @@ header {
 .tabcontents {
 	p {
 		margin-bottom: 2rem;
+	}
+	img {
+		width: 20rem;
+		padding: 2rem 0;
+
+		@media (max-width: $screen-tablet) {
+			display: block;
+			margin: 0 auto;
+		}
 	}
 }
 
@@ -649,6 +676,7 @@ header {
 .card-container {
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 5rem;
 
 	@media (min-width: $screen-laptop) {
 		flex-direction: row;

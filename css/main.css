@@ -61,7 +61,7 @@ h3 {
   @media (min-width: 992px) {
     .desktop-nav {
       float: left;
-      width: 17rem;
+      width: 13rem;
       height: 100vh;
       overflow-y: scroll;
       display: block; }
@@ -75,24 +75,23 @@ h3 {
       .desktop-nav a {
         color: white;
         font-family: 'ralewaysemibold', Arial, sans-serif;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         opacity: 1;
         line-height: inherit;
-        padding: 5rem 0;
-        transition: background .5s ease-in-out;
+        padding: 2.5rem 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        cursor: pointer; }
         .desktop-nav a:hover {
           background: #37a6dd; }
         .desktop-nav a.current {
-          background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d;
-          transition: background .5s ease-in-out; }
+          background: linear-gradient(135deg, rgba(77, 176, 225, 0.5) 0%, transparent 100%), #e5007d; }
           .desktop-nav a.current:hover {
             background: #e2007c; }
         .desktop-nav a img {
-          width: 4rem;
+          width: 2.5rem;
           align-self: center;
           padding-bottom: .5rem; } }
 
@@ -211,7 +210,7 @@ main {
   height: 100vh; }
   @media (min-width: 992px) {
     main {
-      overflow: scroll; } }
+      overflow-y: scroll; } }
 
 .main-content {
   padding: 2rem 5rem; }
@@ -239,29 +238,38 @@ main {
   .main-content .sonntagsfrage-flex .partei-box {
     width: 20rem;
     height: 20rem;
-    background-color: transparent;
-    background: #f7f7f7;
     margin: 1.5rem;
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
-    .main-content .sonntagsfrage-flex .partei-box:hover {
-      border: solid 0.2rem #eee; }
+    justify-content: center;
+    cursor: pointer; }
     .main-content .sonntagsfrage-flex .partei-box div {
-      flex-grow: 2;
       display: flex;
       flex-direction: column;
-      justify-content: center; }
-      .main-content .sonntagsfrage-flex .partei-box div img {
-        max-width: 16rem;
-        max-height: 10rem; }
+      justify-content: center;
+      width: 100%;
+      position: relative; }
+      .main-content .sonntagsfrage-flex .partei-box div:hover:before {
+        content: "";
+        background: url(../img/circle.svg) no-repeat;
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem; }
   .main-content .sonntagsfrage-flex .partei-radio {
     display: none; }
-  .main-content .sonntagsfrage-flex input[type="radio"]:checked + label {
-    border: solid 0.2rem #eee;
-    background: white; }
+  .main-content .sonntagsfrage-flex input[type="radio"]:checked + label div {
+    position: relative; }
+    .main-content .sonntagsfrage-flex input[type="radio"]:checked + label div:before {
+      content: "";
+      background: url(../img/tick.svg) no-repeat;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 3rem;
+      height: 3rem; }
   .main-content .sonntagsfrage-flex .submit {
     margin: 2rem auto;
     width: 100%; }
@@ -297,11 +305,9 @@ main {
     .main-content button:focus, .main-content button:hover {
       color: white; }
     @media (min-width: 992px) {
-      .main-content button {
-        transition: background 5s ease-in-out; }
-        .main-content button:hover {
-          background: #e2007c;
-          color: white; } }
+      .main-content button:hover {
+        background: #e2007c;
+        color: white; } }
 
 header {
   background: #1e3145;
@@ -324,8 +330,7 @@ header {
       order: 3; }
     @media (min-width: 992px) {
       header .header-flex {
-        flex-direction: row;
-        justify-content: space-around; }
+        flex-direction: row; }
         header .header-flex .logo {
           order: 2; }
         header .header-flex .heading1 {
@@ -366,21 +371,29 @@ header {
     list-style: none;
     flex-direction: row;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap; }
+    align-items: center; }
+    @media (max-width: 768px) {
+      .tab-nav ul {
+        flex-wrap: wrap; } }
   .tab-nav a {
     text-decoration: none;
     color: white;
-    padding: 4rem 2rem; }
+    padding: 2rem 0;
+    display: block;
+    font-family: 'ralewaysemibold', Arial, sans-serif; }
     .tab-nav a:hover {
       color: white; }
   .tab-nav li {
     background: #4db0e1;
     border-bottom: 0.3rem solid #459eca;
-    min-width: 10rem;
+    width: 100%;
     text-align: center;
-    border-right: 0.1rem solid #eee;
-    margin-top: 1rem; }
+    border-right: 0.1rem solid #eee; }
+    @media (max-width: 768px) {
+      .tab-nav li {
+        margin-top: 1rem; }
+        .tab-nav li:first-child {
+          margin-top: 0; } }
     .tab-nav li:last-of-type {
       border-right: none; }
     .tab-nav li:hover {
@@ -393,6 +406,13 @@ header {
 
 .tabcontents p {
   margin-bottom: 2rem; }
+.tabcontents img {
+  width: 20rem;
+  padding: 2rem 0; }
+  @media (max-width: 768px) {
+    .tabcontents img {
+      display: block;
+      margin: 0 auto; } }
 
 /* HELPERCLASS CLEARFIX */
 .clearfix:before, .clearfix:after {
@@ -440,7 +460,8 @@ header {
 
 .card-container {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-bottom: 5rem; }
   @media (min-width: 992px) {
     .card-container {
       flex-direction: row; } }
