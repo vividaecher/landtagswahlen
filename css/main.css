@@ -61,7 +61,7 @@ h3 {
   @media (min-width: 992px) {
     .desktop-nav {
       float: left;
-      width: 13rem;
+      width: 15rem;
       height: 100vh;
       overflow-y: scroll;
       display: block; }
@@ -307,6 +307,8 @@ main {
     outline: none; }
     .main-content button[disabled] {
       background: #ccc; }
+      .main-content button[disabled]:hover {
+        background: #ccc; }
     .main-content button:focus, .main-content button:hover {
       color: white; }
     @media (min-width: 992px) {

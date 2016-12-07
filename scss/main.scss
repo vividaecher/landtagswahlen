@@ -11,7 +11,7 @@ $white-gradient: linear-gradient(to bottom, white 75%, transparent 100%);
 $fliestext: 1.8rem;
 $headline: 2.6rem;
 $navi-font: 2.6rem;
-$navi-font-desktop: 1.8rem;
+$navi-font-desktop: 1.5rem;
 
 $screen-tablet: 768px;
 $screen-laptop: 992px;
@@ -105,7 +105,7 @@ h3 {
 	@media (min-width: $screen-laptop) {
 
 		float: left;
-		width: 13rem;
+		width: 15rem;
 		height: 100vh;
 		overflow-y: scroll;
 		display: block;
@@ -126,7 +126,7 @@ h3 {
 		a {
 			color: white;
 			font-family: 'ralewaysemibold', Arial, sans-serif;
-			font-size: 1.5rem;
+			font-size: $navi-font-desktop;
 			opacity: 1;
 			line-height: inherit;
 			padding: 2.5rem 0;
@@ -460,6 +460,10 @@ main {
 
 		&[disabled] {
 			background: #ccc;
+
+			&:hover {
+				background: #ccc;
+			}
 		}
 
 		&:focus, &:hover {
