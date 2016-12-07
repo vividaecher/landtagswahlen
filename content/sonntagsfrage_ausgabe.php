@@ -145,9 +145,8 @@
       </header>
 
       <div class="main-content">
-        <h1>Die Sonntagsfrage</h1>
-        <p>Deine Stimme wurde gezählt!</p>
         <?php
+        echo '<h1>Die Sonntagsfrage</h1>';
         // Prüft den Index $_SESSION["voted"], so dass bei der Abfrage kein Exception geschmissen wird
         // Die Abfrage ist das was nach dem && kommt
         $has_voted = isset($_SESSION['voted']); // && $_SESSION['voted'];
@@ -164,10 +163,11 @@
             $query = "UPDATE nrw_2017 SET votes = votes + 1 WHERE party = '$party'";
             // Das Ergebnis der Query wird in die Session gespeichert, um oben überprüft werden zu können (siehe Zeile 18)
             $_SESSION['voted'] = mysqli_query($db, $query);
+            echo '<div class="ausgabe"><h3>Deine Stimme wurde gezählt!</h3><div>';
           }
-        }
+        }//window.location.href = "sonntagsfrage.php";
         else {
-          echo '<script type="text/javascript">alert("Du hast bereits eine Stimme abgegeben.");</script>';
+          echo '<div class="ausgabe"><h3>Du hast bereits abgestimmt!</h3><div>';
         }
 
         if (!$db) {
@@ -199,6 +199,7 @@
 
       mysqli_close($db);
       ?>
+      </div>
       <div class="submit text-center">
         <button id="destroy_session">Refresh</button>
         <script src="../js/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>

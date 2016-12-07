@@ -80,7 +80,6 @@ h3 {
         line-height: inherit;
         padding: 2.5rem 0;
         display: flex;
-        -moz-box: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -164,8 +163,7 @@ nav {
     nav .hamburger-nav .current-mobile {
       opacity: 1; }
     nav .hamburger-nav.visible {
-      display: flex;
-      -moz-box: flex; }
+      display: flex; }
 
 .wrapper {
   width: 100vw;
@@ -221,7 +219,6 @@ main {
       padding: 0 10rem; } }
   .main-content .content-flex {
     display: flex;
-    -moz-box: flex;
     flex-direction: column; }
     @media (min-width: 992px) {
       .main-content .content-flex {
@@ -231,7 +228,6 @@ main {
           padding-right: 4rem; } }
   .main-content .sonntagsfrage-flex form {
     display: flex;
-    -moz-box: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -250,7 +246,6 @@ main {
     cursor: pointer; }
     .main-content .sonntagsfrage-flex .partei-box div {
       display: flex;
-      -moz-box: flex;
       flex-direction: column;
       justify-content: center;
       width: 100%;
@@ -379,7 +374,6 @@ header {
     list-style: none;
     flex-direction: row;
     display: flex;
-    -moz-box: flex;
     align-items: center; }
     @media (max-width: 768px) {
       .tab-nav ul {
@@ -434,9 +428,14 @@ header {
 .clearfix {
   *zoom: 1; }
 
+.ausgabe h3 {
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  margin: 0;
+  text-align: center; }
+
 .ausgabe-flex {
   display: flex;
-  -moz-box: flex;
   flex-direction: column; }
   .ausgabe-flex .diagramm {
     color: #fff;

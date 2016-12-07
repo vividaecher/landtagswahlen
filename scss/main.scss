@@ -131,7 +131,6 @@ h3 {
 			line-height: inherit;
 			padding: 2.5rem 0;
 			display: flex;
-			-moz-box: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
@@ -254,7 +253,6 @@ nav {
 
 		&.visible {
 			display: flex;
-			-moz-box: flex;
 		}
 	}
 }
@@ -334,7 +332,6 @@ main {
 
 	.content-flex {
 		display: flex;
-		-moz-box: flex;
 		flex-direction: column;
 
 		@media (min-width: $screen-laptop) {
@@ -352,7 +349,6 @@ main {
 
 		form {
 			display: flex;
-			-moz-box: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
@@ -375,7 +371,6 @@ main {
 
 			div {
 				display: flex;
-				-moz-box: flex;
 				flex-direction: column;
 				justify-content: center;
 				width: 100%;
@@ -575,7 +570,6 @@ header {
 		list-style: none;
 		flex-direction: row;
 		display: flex;
-		-moz-box: flex;
 		align-items: center;
 
 		@media (max-width: $screen-tablet) {
@@ -645,9 +639,17 @@ header {
 .clearfix:after {clear: both;}
 .clearfix {*zoom: 1;}
 
+.ausgabe {
+	h3 {
+		padding-bottom: 2rem;
+		font-size: 3rem;
+		margin: 0;
+		text-align: center;
+	}
+}
+
 .ausgabe-flex {
 	display: flex;
-	-moz-box: flex;
 	flex-direction: column;
 
 	.diagramm {
@@ -663,7 +665,6 @@ header {
 			}
 		}
 	}
-
 	.diagramm-linke {background: #DC0000;}
 	.diagramm-spd {background: #FE0000;}
 	.diagramm-gruenen {background: #1FA12D;}
