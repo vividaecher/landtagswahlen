@@ -224,7 +224,6 @@
 </main>
 </section>
 </div>
-<script src="../js/bootstrap.min.js" type="text/javascript"></script>
 <script src="../js/init.js" type="text/javascript"></script>
 </body>
 </html>
